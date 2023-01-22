@@ -1,0 +1,44 @@
+header {
+    display: flexbox;
+    
+    align-content: flex-end;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    height: 200px;
+    
+    
+}
+nav {
+    background-color: orange;
+    color: white;
+    text-decoration-line: underline;
+    height: 100px;
+    font-size: 25px; 
+    text-align: center;
+
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    background-color: green;
+    height: 350px;
+      
+}
+article {
+    width: 1500px;
+    height: 150px;
+    background-color: blue;
+    color: white;
+    font-size: 18px;
+}
+footer {
+    display: block;
+    height: 80px;
+    background-color: blueviolet;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}

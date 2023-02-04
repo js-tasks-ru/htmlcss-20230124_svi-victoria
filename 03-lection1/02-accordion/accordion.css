@@ -10,7 +10,9 @@
     line-height: 24px;
     color: #212429;
     display: block;
+
 }
+
 
 .accordion__text {
     font-family: 'Inter';
@@ -19,5 +21,13 @@
     font-size: 16px;
     line-height: 24px;
     color: #495057;
+}
+
+.accordion > .accordion__summary::webkit-details-marker {
+    display: none;
+}
+
+.accordion > .accordion__summary {
+    list-style: none;
 }
 

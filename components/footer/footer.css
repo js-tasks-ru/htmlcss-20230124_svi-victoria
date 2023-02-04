@@ -11,6 +11,8 @@
     font-size: 38px;
     line-height: 48px;
     color: #212429;
+    max-width: 110px;
+    margin-left: 682px;
 }
 
 .footer__text {
@@ -21,4 +23,6 @@
     line-height: 24px;
     text-align: center;
     color: #212429;
+    max-width: 640px;
+    margin-left: 417px;
 }

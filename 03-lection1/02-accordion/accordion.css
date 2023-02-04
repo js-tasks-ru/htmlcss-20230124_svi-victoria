@@ -1,5 +1,7 @@
 .accordion {
     border: 1px solid #ACB5BD;
+    border-radius: 8px;
+    
 }
 
 .accordion__summary {
@@ -9,7 +11,7 @@
     font-size: 16px;
     line-height: 24px;
     color: #212429;
-    display: block;
+    padding: 24px 539px 24px 32px;
 
 }
 
@@ -21,6 +23,7 @@
     font-size: 16px;
     line-height: 24px;
     color: #495057;
+    padding-left: 32px;
 }
 
 .accordion > .accordion__summary::webkit-details-marker {
@@ -29,5 +32,11 @@
 
 .accordion > .accordion__summary {
     list-style: none;
+}
+
+.card__accordion {
+margin: 8px;
+display: flex;
+
 }
 

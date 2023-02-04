@@ -27,11 +27,13 @@
     color: #495057;
 }
 
+.button:hover {
+    cursor: pointer;
+}
+
 .button:disabled {
     pointer-events: none;
     opacity: 0.5;
 }
 
-.button:hover {
-    cursor: pointer;
-}
+

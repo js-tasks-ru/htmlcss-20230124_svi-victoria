@@ -1,0 +1,54 @@
+.histogramm__chart__el {
+    background-color: var(--purple);
+    margin: 1px;
+}
+
+.histogramm__chart__el_1 {
+    flex-grow: 1;
+    height: 10%;
+}
+
+.histogramm__chart__el_2 {
+    flex-grow: 1;
+    height: 20%;
+}
+
+.histogramm__chart__el_3 {
+    flex-grow: 1;
+    height: 30%;
+}
+
+.histogramm__chart__el_4 {
+    flex-grow: 1;
+    height: 40%;
+}
+
+.histogramm__chart__el_5 {
+    flex-grow: 1;
+    height: 50%;
+}
+
+.histogramm__chart__el_6 {
+    flex-grow: 1;
+    height: 60%;
+}
+
+.histogramm__chart__el_7 {
+    flex-grow: 1;
+    height: 70%;
+}
+
+.histogramm__chart__el_8 {
+    flex-grow: 1;
+    height: 80%;
+}
+
+.histogramm__chart__el_9 {
+    flex-grow: 1;
+    height: 90%;
+}
+
+.histogramm__chart__el_10 {
+    flex-grow: 1;
+    height: 100%;
+}

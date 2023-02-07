@@ -5,20 +5,6 @@ font-style: normal;
 font-weight: 400;
 }
 
-.card {
-    width: 354px;
-    height: 185px;
-    margin: 20px;
-    padding: 24px;
-
-    border: 1px solid var(--grey-4);
-    border-radius: 8px;
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-}
-
 .histogramm__title {
     font-size: 16px;
     flex-basis: 50%;
@@ -37,13 +23,56 @@ font-weight: 400;
     color: var(--black);
 }
 
-.histogramm__chart {
+    .histogramm__chart {
+        height: 50px;
+        align-self: flex-end;
+        flex-basis: 100%;
+        display: flex;
+        align-items: flex-end;
+    }
 
-    width: 330px;
-    height: 50px;
-    align-self: flex-end;
-    flex-basis: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+.histogramm__chart-el {
+    background-color: var(--purple);
+    margin-left: 1px;
+    flex-grow: 1;
+}
+
+.histogramm__chart-el_1 {
+    height: 10%;
+}
+
+.histogramm__chart-el_2 {
+    height: 20%;
+}
+
+.histogramm__chart-el_3 {
+    height: 30%;
+}
+
+.histogramm__chart-el_4 {
+    height: 40%;
+}
+
+.histogramm__chart-el_5 {
+    height: 50%;
+}
+
+.histogramm__chart-el_6 {
+    height: 60%;
+}
+
+.histogramm__chart-el_7 {
+    height: 70%;
+}
+
+.histogramm__chart-el_8 {
+    height: 80%;
+}
+
+.histogramm__chart-el_9 {
+    height: 90%;
+}
+
+.histogramm__chart-el_10 {
+    height: 100%;
 }

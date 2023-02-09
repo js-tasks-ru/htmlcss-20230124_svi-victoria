@@ -1,23 +1,35 @@
 .accordion {
-    border: 1px solid #ACB5BD;
-}
-
-.accordion__summary {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    color: #212429;
-    display: inline-block;
+    color: var(--black);
+    max-width: 730px;
 }
 
-.accordion__text {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #495057;
+.accordion__item {
+    border: 1px solid var(--grey-3);
+    border-radius: 8px;
+    margin-bottom: 8px;
+    padding-top: 24px;
+    padding-left: 32px;
+    padding-bottom: 24px;
+    list-style: none;
 }
 
+.accordion__heading {
+    display: block;
+}
+
+.accordion__item:last-child {
+    margin-bottom: 0px;
+}
+
+.accordion__item[open] {
+    padding-bottom: 32px;
+}
+
+.accordion__item > .accordion__section::webkit-details-marker {
+    display: none;
+}

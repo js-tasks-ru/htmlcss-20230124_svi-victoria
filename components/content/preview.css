@@ -1,0 +1,12 @@
+.preview {
+    background-color: #F9FAFC;
+    border-top: 1px solid var(--grey-2);
+    border-bottom: 1px solid (--grey-2);
+    padding: 67px 0px 204px;
+}
+
+.preview__cards-list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}

@@ -1,7 +1,7 @@
 .footer {
     background: #E5E5E5;
     padding: 71px 0 136px;
-    color: #212429;
+    color: var(--black);
 
 }
 

@@ -22,7 +22,7 @@
     display: block;
 }
 
-.accordion__item :last-child {
+.accordion__item:last-child {
     margin-bottom: 0px;
 }
 

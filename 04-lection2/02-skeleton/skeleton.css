@@ -28,12 +28,12 @@
     margin-bottom: 0px;
 }
 
-.skeleton__line_first {
-    max-width: 172px;
+.skeleton__line_small {
+    max-width: 40%;
 }
 
-.skeleton__line_second {
-    max-width: 257px;
+.skeleton__line_middle {
+    max-width: 50%;
 }
 
 .skeleton__circle {

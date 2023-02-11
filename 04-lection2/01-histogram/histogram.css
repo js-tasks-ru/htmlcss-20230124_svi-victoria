@@ -3,18 +3,20 @@
 font-family: 'Inter';
 font-style: normal;
 font-weight: 400;
+padding: 16px 24px 24px;
+border: 1px solid var(--grey-4);
+border-radius: 8px;
+display:flex;
+flex-wrap: wrap;
 }
 
 .histogramm__title {
     font-size: 16px;
-    flex-basis: 50%;
     color: var(--black);
 }
 
 .histogramm__text {
     font-size: 16px;
-    text-align: end;
-    flex-basis: 50%;
     color: var(--purple);
 }
 
@@ -23,13 +25,13 @@ font-weight: 400;
     color: var(--black);
 }
 
-    .histogramm__chart {
+.histogramm__chart {
         height: 50px;
         align-self: flex-end;
         flex-basis: 100%;
         display: flex;
         align-items: flex-end;
-    }
+}
 
 .histogramm__chart-el {
     background-color: var(--purple);

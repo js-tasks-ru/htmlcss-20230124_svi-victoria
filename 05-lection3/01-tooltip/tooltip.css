@@ -1,7 +1,6 @@
 .tooltip {
 display: inline-block;
 position: relative;
-padding-top: 100px;
 }
 
 .tooltip__trigger {
@@ -23,17 +22,16 @@ cursor: pointer;
     white-space: nowrap;
     position: absolute;
     left: 50%;
-    top: calc(100% + 8px);
+    bottom: 39px;
     transform: translateX(-50%);
-
 }
 
 .tooltip__bubble:before {
     content:"";
     border: 10px solid transparent;
-    border-bottom-color: #4263EB;
+    border-top-color: #4263EB;
     position: absolute;
-    bottom: 100%;
+    top: 100%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -41,3 +39,4 @@ cursor: pointer;
 .tooltip__trigger:hover ~ .tooltip__bubble {
     display: block;
 }
+

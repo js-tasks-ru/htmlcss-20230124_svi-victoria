@@ -30,3 +30,20 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+
+.footer_transparent {
+    padding: 92px 0 56px;
+    color: var(--black);
+}
+
+.footer__title_transparent {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--grey-3);
+    text-align: center;
+}

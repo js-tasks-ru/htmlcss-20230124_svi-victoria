@@ -1,6 +1,15 @@
 @import '../../assets/css/reset.css';
 @import '../fonts/fonts.css';
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Ubuntu:ital@1&display=swap');
+@import '../../components/card.css';
+@import '../../components/container/container.css';
+@import '../../components/footer/footer.css';
+@import '../../components/header/header.css';
+@import '../../components/content/preview.css';
+@import '../../pages/page.css';
+@import '../../components/content/basic.css';
+@import '../../components/content/component-view.css';
+@import '../../components/content/menu.css';
 
 :root {
     --white: #ffffff;

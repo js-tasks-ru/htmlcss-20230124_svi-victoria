@@ -1,0 +1,13 @@
+.basic {
+    background-color: #F9FAFC;
+    border-top: 1px solid var(--grey-2);
+    border-bottom: 1px solid (--grey-2);
+    padding: 67px 0px 204px;
+}
+
+.basic__container {
+    padding-top: 36px;
+    display: grid;
+    grid-template-columns: 165px 285px 56px 746px 1fr;
+    grid-template-rows: 825px 1fr;
+}

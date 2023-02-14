@@ -1,12 +1,12 @@
 .histogramm {
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-padding: 16px 24px 24px;
-border: 1px solid var(--grey-4);
-border-radius: 8px;
-display:flex;
-flex-wrap: wrap;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    padding: 16px 24px 24px;
+    border: 1px solid var(--grey-4);
+    border-radius: 8px;
+    display:flex;
+    flex-wrap: wrap;
 }
 
 .histogramm__title {
@@ -25,11 +25,11 @@ flex-wrap: wrap;
 }
 
 .histogramm__chart {
-        height: 50px;
-        align-self: flex-end;
-        flex-basis: 100%;
-        display: flex;
-        align-items: flex-end;
+    height: 50px;
+    align-self: flex-end;
+    flex-basis: 100%;
+    display: flex;
+    align-items: flex-end;
 }
 
 .histogramm__chart-el {

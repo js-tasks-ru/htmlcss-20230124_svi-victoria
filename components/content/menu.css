@@ -1,7 +1,6 @@
 .menu {
-    grid-area: 1/2/2/3;
     display: grid;
-    grid-template-rows: 42px repeat(6, 22px) 52px 1fr;
+    grid-template-rows: 42px repeat(6, 22px) 52px 1fr; 
     align-items: center;
 }
 

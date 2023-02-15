@@ -6,8 +6,6 @@
 }
 
 .basic__container {
-    padding: 36px 165px 0px 165px;
     display: grid;
-    grid-template-columns: 25fr 75fr;
-
+    grid-template-columns: 1fr 3fr; /* оставила 1fr 3fr потому что auto и 1fr отображаются не совсем в верных пропорциях.*/
 }

@@ -38,42 +38,29 @@
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 20px;
+    font-family: 'Source Sans Pro';
+    font-size: 16px;
 }
 
 .calendar__item_weekday {
     font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
-    line-height: 20px;
     color: #90A0B7;
 }
 
 .calendar__item_day {
-    font-family: 'Source Sans Pro';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
     color: #334D6E;
 }
 
 .calendar__item_active {
-    font-family: 'Source Sans Pro';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
     color: #FFFFFF;
     background: #4263EB;
 }
 
 .calendar__item_between-active {
-    font-family: 'Source Sans Pro';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
     color: #FFFFFF;
     background: #A0B1F5;
 }

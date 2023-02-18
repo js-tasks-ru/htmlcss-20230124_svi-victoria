@@ -1,6 +1,6 @@
 .header {
     background: var(--grey-2);
-    padding: 96px 0 77px;
+    padding: 25px 0 77px;
 }
     
 .header__title {
@@ -15,6 +15,10 @@
 
 .header_transparent {
     padding: 24px 0;
+}
+
+.header__logo {
+    padding-bottom: 41px;
 }
 
 

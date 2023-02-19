@@ -4,8 +4,45 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./toggler.css">
+        <meta charset="uff-8">
+        <title>Toggler</title>
     </head>
     <body>
+        <label class="toggler">
+            <input type="checkbox" class="toggler__input">
+            <diV class="toggler__state">
+                <div class="toggler__control">
+                    <svg class="toggler__icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="24" height="24" rx="12"/>
+                        </svg>
+                </div>
+                <div class="toggler__title">Off</div>
+            </diV>
+        </label>
+
+        <label class="toggler toggler__checked">
+            <input type="checkbox" class="toggler__input" checked>
+            <diV class="toggler__state">
+                <div class="toggler__control">
+                    <svg class="toggler__icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="24" height="24" rx="12"/>
+                        </svg>
+                </div>
+                <div class="toggler__title">On</div>
+            </diV>
+        </label>
+
+        <label class="toggler toggler__disabled">
+            <input type="checkbox" class="toggler__input" disabled>
+            <diV class="toggler__state">
+                <div class="toggler__control">
+                    <svg class="toggler__icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="24" height="24" rx="12"/>
+                        </svg>
+                </div>
+                <div class="toggler__title">Disabled</div>
+            </diV>
+        </label>
 
     </body>
 </html>

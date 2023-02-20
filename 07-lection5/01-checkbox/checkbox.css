@@ -65,3 +65,4 @@
 .checkbox__input:focus ~ .checkbox__state .checkbox__title {
     text-decoration: underline;
 }
+

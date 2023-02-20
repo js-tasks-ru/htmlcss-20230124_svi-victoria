@@ -17,8 +17,14 @@
     padding: 24px 0;
 }
 
-.header__logo {
-    padding-bottom: 41px;
+.header__inner {
+    margin-bottom: 41px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+
+
 
 

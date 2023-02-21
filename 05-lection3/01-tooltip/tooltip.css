@@ -1,10 +1,10 @@
 .tooltip {
-display: inline-block;
-position: relative;
+    display: inline-block;
+    position: relative;
 }
 
 .tooltip__trigger {
-cursor: pointer;
+    cursor: pointer;
 }
 
 .tooltip__bubble {
@@ -38,5 +38,10 @@ cursor: pointer;
 
 .tooltip__trigger:hover ~ .tooltip__bubble {
     display: block;
+}
+
+.tooltip__icon-help {
+    width: 22px;
+    height: 22px;
 }
 

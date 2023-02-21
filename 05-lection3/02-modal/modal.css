@@ -41,3 +41,7 @@
     color: #495057;
 }
 
+.modal__icon-cross {
+    width: 9px;
+    height: 9px;
+}

@@ -4,8 +4,62 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./input.css">
+        <meta charset="uff-8">
+        <title>Form group</title>
     </head>
     <body>
+
+            <label class="form-group">
+                <div class="form-group__state">
+                    <h2 class="form-group__title">LABEL</h2>
+                    <div class="form-group__control">
+                        <input class="form-group__input" type="text" placeholder="Placeholder">
+                    </div>
+                </div>
+            </label>
+
+            <label class="form-group">
+                <div class="form-group__state">
+                    <h5 class="form-group__title">FOCUSED</h5>
+                    <div class="form-group__control" focus>
+                        <input class="form-group__input" type="text" placeholder="Filled input">
+                    </div>
+                </div>
+            </label>
+
+            <label class="form-group form-group_success">
+                <div class="form-group__state">
+                    <h3 class="form-group__title">SUCCESS</h3>
+                    <div class="form-group__control">
+                        <input class="form-group__input" type="text" placeholder="Success">
+                        <svg class="form-group_success__icon">
+                            <use href="../../assets/images/icons-sprite.svg#success"></use>
+                        </svg>
+                    </div>
+                </div>
+            </label>
+
+        
+            <label class="form-group form-group_invalid">
+                <div class="form-group__state">
+                    <h4 class="form-group__title">ERROR</h4>
+                    <div class="form-group__control">
+                        <input class="form-group__input_invalid" type="text" placeholder="Error">
+                        <svg class="form-group_invalid__icon">
+                            <use href="../../assets/images/icons-sprite.svg#error"></use>
+                        </svg>
+                    </div>
+                </div>
+            </label>
+
+
+
+
+
+
+
+
+
 
     </body>
 </html>

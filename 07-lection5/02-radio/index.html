@@ -4,8 +4,41 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./radio.css">
+        <meta charset="uff-8">
+        <title>Radio</title>
     </head>
     <body>
+        <label class="radio">
+            <input type="radio" class="radio__input" name="r1">
+            <div class="radio__state">
+                <div class="radio__control">
+                    <svg class="radio__icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="18" height="18" rx="9" fill="#4263EB"/>
+                    </svg>                        
+                </div>
+                <h2 class="radio__title">Default</h2>
+            </div>
+        </label>
 
+        <label class="radio">
+            <input type="radio" class="radio__input" name="r1" checked>
+            <div class="radio__state">
+                <div class="radio__control">
+                    <svg class="radio__icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="18" height="18" rx="9" fill="#4263EB"/>
+                    </svg>                        
+                </div>
+                <h3 class="radio__title">Selected</h3>
+            </div>
+        </label>
+
+        <label class="radio">
+            <input type="radio" class="radio__input" name="r1" disabled>
+            <div class="radio__state">
+                <div class="radio__control">                       
+                </div>
+                <h4 class="radio__title">Disabled</h4>
+            </div>
+        </label>
     </body>
 </html>

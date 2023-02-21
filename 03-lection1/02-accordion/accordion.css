@@ -12,14 +12,12 @@
     border: 1px solid var(--grey-3);
     border-radius: 8px;
     margin-bottom: 8px;
-    padding-top: 24px;
-    padding-left: 32px;
-    padding-bottom: 24px;
-    list-style: none;
+    padding: 24px 32px;
 }
 
 .accordion__heading {
-    display: block;
+    display: flex;
+    justify-content: space-between;
 }
 
 .accordion__item:last-child {
@@ -30,6 +28,12 @@
     padding-bottom: 32px;
 }
 
-.accordion__item > .accordion__section::webkit-details-marker {
-    display: none;
+.accordion__icon-daw {
+    width: 16px;
+    height: 8px;
+    align-self: center;
+}
+
+.accordion__item[open] .accordion__icon-daw {
+    transform: rotateZ(180deg);
 }

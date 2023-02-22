@@ -68,9 +68,5 @@
 }
 
 .form-group__input:focus {
-    border: 1px solid var(--blue);
+    border: 1px solid var(--blue) !important;
 }
-
-/*.form-group__control:focus > .form-group__input{
-    border: 1px solid var(--blue);
-}*/

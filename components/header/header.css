@@ -24,7 +24,26 @@
     align-items: center;
 }
 
+@media (max-width: 767px) {
+    .header {
+        background: #FFFFFF;
+    };
+}
 
+@media (max-width: 767px) {
+    .header__inner {
+        justify-content: center;
+    };
+}
+
+@media (max-width: 767px) {
+    .header__title {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 38px;
+    color: var(--grey-4);
+    }
+}
 
 
 

@@ -30,3 +30,9 @@
     line-height: 22px;
     color: #D84910;
 }
+
+@media (max-width: 767px) {
+    .menu {
+        display:none;
+    }
+}

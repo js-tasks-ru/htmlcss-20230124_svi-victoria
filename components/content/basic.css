@@ -7,5 +7,11 @@
 
 .basic__container {
     display: grid;
-    grid-template-columns: 1fr 3fr; /* оставила 1fr 3fr потому что auto и 1fr отображаются не совсем в верных пропорциях.*/
+    grid-template-columns: 1fr 3fr; 
+}
+
+@media (max-width: 767px) {
+    .basic__container {
+        display: block;
+    };
 }

@@ -1,17 +1,18 @@
 .form-group {
-    display: inline-flex;
+    display: flex;
+    flex-direction: column;
     gap: 5px;
-    color: var(--grey-2);
+    color: var(--grey-4);
 }
 
 .form-group__control {
-    height: 56px; /*как правило, формы ввода везде одного размера, поэтому задаю точные height и width */ 
-    width: 356px;
-    display: inline-flex;
+    min-height: 56px; 
+    min-width: 356px;
+    display: flex;
     position: relative;
 }
 
-.form-group__title {
+.form-group__label {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
@@ -26,7 +27,7 @@
     flex-grow: 1;
     box-sizing: border-box;
     background: #FFFFFF;
-    border: 1px solid var(--grey-2);
+    border: 1px solid var(--grey-4);
     border-radius: 8px;
     font-family: 'Inter';
     font-style: normal;
@@ -35,38 +36,39 @@
     line-height: 26px;
 }
 
-.form-group__input_invalid {
-    flex-grow: 1;
-    box-sizing: border-box;
-    background: #FFFFFF;
+.form-group__icon {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 18px;
+    right: 19px; 
+    display: none;
+}
+
+.form-group_invalid .form-group__input {
     border: 1px solid #F03D3E;
-    border-radius: 8px;
+}
+
+.form-group_invalid .form-group__icon_error {
+    fill: #F03D3E;
+    display: block;
+}
+
+.form-group_success .form-group__icon_success {
+    fill: var(--blue);
+    display: block;
+}
+
+.form-group__input:focus {
+    outline: none;
+    border: 1px solid var(--blue);
+}
+
+.form-group__input::placeholder {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 26px;
     color: var(--grey-2);
-}
-
-.form-group_success__icon {
-    width: 24px;
-    height: 24px;
-    position: absolute;
-    top: 18px;
-    left: 319px;
-    fill: var(--blue);
-}
-
-.form-group_invalid__icon {
-    width: 24px;
-    height: 24px;
-    position: absolute;
-    top: 18px;
-    left: 319px;
-    fill: #F03D3E;
-}
-
-.form-group__input:focus {
-    border: 1px solid var(--blue) !important;
 }

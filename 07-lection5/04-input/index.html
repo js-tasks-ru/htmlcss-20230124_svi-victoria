@@ -4,8 +4,60 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./input.css">
+        <meta charset="uff-8">
+        <title>Form group</title>
     </head>
     <body>
+        <div class="form-group">
+            <label class="form-group__label">label</label>
+            <div class="form-group__control">
+                <input class="form-group__input" type="text" placeholder="Placeholder">
+                <svg class="form-group__icon form-group__icon_success">
+                    <use xlink:href="../../assets/images/icons-sprite.svg#success"></use>
+                </svg>
+                <svg class="form-group__icon form-group__icon_error">
+                    <use xlink:href="../../assets/images/icons-sprite.svg#error"></use>
+                </svg>
+            </div>
+        </div>
+            
+        <div class="form-group">
+            <label class="form-group__label">focused</label>
+            <div class="form-group__control">
+                <input class="form-group__input" type="text" placeholder="Filled input" focus>
+                <svg class="form-group__icon form-group__icon_success">
+                    <use xlink:href="../../assets/images/icons-sprite.svg#success"></use>
+                </svg>
+                <svg class="form-group__icon form-group__icon_error">
+                    <use xlink:href="../../assets/images/icons-sprite.svg#error"></use>
+                </svg>
+            </div>
+        </div>
 
+        <div class="form-group form-group_success">
+            <label class="form-group__label">success</label>
+            <div class="form-group__control">
+                <input class="form-group__input" type="text" placeholder="Success">
+                <svg class="form-group__icon form-group__icon_success">
+                    <use xlink:href="../../assets/images/icons-sprite.svg#success"></use>
+                </svg>
+                <svg class="form-group__icon form-group__icon_error">
+                    <use xlink:href="../../assets/images/icons-sprite.svg#error"></use>
+                </svg>
+            </div>
+        </div>
+            
+        <div class="form-group form-group_invalid">
+            <label class="form-group__label">error</label>
+            <div class="form-group__control">
+                <input class="form-group__input" type="text" placeholder="Error">
+                <svg class="form-group__icon form-group__icon_success">
+                    <use xlink:href="../../assets/images/icons-sprite.svg#success"></use>
+                </svg>
+                <svg class="form-group__icon form-group__icon_error">
+                    <use xlink:href="../../assets/images/icons-sprite.svg#error"></use>
+                </svg>
+            </div>
+        </div>
     </body>
 </html>

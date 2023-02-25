@@ -1,0 +1,51 @@
+.tabs__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 40px;
+    background: var(--grey-2);
+}
+
+.tabs__input {
+    position: absolute;
+    outline: none;
+    clip: rect(0, 0, 0, 0);
+}
+
+.tabs__label {
+    cursor: pointer;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #212429;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.tabs__content {
+    display: none;
+}
+
+.tabs__input_complex:checked .tabs__content_complex {
+    display: block;
+}
+
+.tabs__input_simple:checked .tabs__content_simple {
+    display: block;
+}
+
+.tabs__input:checked ~ .tabs__slider {
+    transform: translateX(100px);
+    transition: transform 0.250ms linear;
+}
+
+.tabs__slider {
+
+}
+
+
+

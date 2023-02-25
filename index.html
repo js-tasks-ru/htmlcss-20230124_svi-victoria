@@ -9,10 +9,36 @@
     </head>
     <body>
         <div class="page">
+            <div class="tabs__wrap">
+                <div class="tabs__state">
+                    <input class="tabs__input tabs__input_all" type="radio" id="#all-tab" name="tab" checked>
+                    <label class="tabs__label" for="#all-tab">All components</label>
+                    
+                </div>
+                <div class="tabs__state">
+                    <input class="tabs__input tabs__input_complex" type="radio" id="#complex-tab" name="tab">
+                    <label class="tabs__label" for="#complex-tab">Complex</label>
+                </div>
+                <div class="tabs__state">
+                    <input class="tabs__input tabs__input_simple" type="radio" id="#simple-tab" name="tab">
+                    <label class="tabs__label" for="#simple-tab">Simple</label>
+                </div>
+                <svg class="tabs__slider" width="117" height="5" viewBox="0 0 117 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="117" height="5" fill="#212429"/>
+                </svg>  
+            
+                <div class="tabs__content tabs__content_complex">
+                    <!-- Сложные компоненты -->
+                </div>
+                <div class="tabs__content tabs__content_simple">
+                    <!-- Простые компоненты -->
+                </div>
+            </div>
+
             <header class="header">
                 <div class="container">
                     <div class="header__inner">
-                        <svg class="header__logo" width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="header__logo" width="110" height="32" viewBox="0 0 110 32" fill="" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_16746_155)">
                             <rect y="1" width="30" height="30" fill="#212429"/>
                             <rect x="38" width="32" height="32" rx="16" fill="#212429"/>
@@ -26,6 +52,7 @@
                             </svg>
                     </div>
                     <h1 class="header__title">Reusable component library</h1>
+  
                 </div>
             </header>
             <main class="preview page__main">

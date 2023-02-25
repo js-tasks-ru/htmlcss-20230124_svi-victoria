@@ -10,6 +10,7 @@
 @import '../../components/content/basic.css';
 @import '../../components/content/component-view.css';
 @import '../../components/content/menu.css';
+@import '../../components/content/tabs.css';
 
 :root {
     --white: #ffffff;

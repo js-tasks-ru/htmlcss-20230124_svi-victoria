@@ -1,51 +1,65 @@
 .tabs__wrap {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: flex-start;
-    gap: 40px;
-    background: var(--grey-2);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 40px;
+  background: var(--grey-2);
+  padding: 40px 0 0px;
 }
 
 .tabs__input {
-    position: absolute;
-    outline: none;
-    clip: rect(0, 0, 0, 0);
+  position: absolute;
+  outline: none;
+  clip: rect(0, 0, 0, 0);
 }
 
 .tabs__label {
-    cursor: pointer;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #212429;
-    display: flex;
-    flex-direction: column;
-    position: relative;
+  cursor: pointer;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #212429;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-bottom: 8px;
 }
 
 .tabs__content {
-    display: none;
+  display: none;
 }
 
 .tabs__input_complex:checked .tabs__content_complex {
-    display: block;
+  display: block;
 }
 
 .tabs__input_simple:checked .tabs__content_simple {
-    display: block;
+  display: block;
+}
+
+.tabs__input:checked ~ .tabs__label {
+  color: red; /*не забыть убрать*/
 }
 
 .tabs__input:checked ~ .tabs__slider {
-    transform: translateX(100px);
-    transition: transform 0.250ms linear;
+  animation: for-slider 2s alternate ease-in-out forwards;
 }
 
 .tabs__slider {
-
 }
 
-
-
+@keyframes for-slider {
+  from {
+    width: 0px;
+    height: 5px;
+    visibility: hidden;
+  }
+  to {
+    width: 100%;
+    height: 5px;
+    background-color: var(--black);
+  }
+}

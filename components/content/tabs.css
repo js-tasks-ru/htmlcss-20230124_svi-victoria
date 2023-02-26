@@ -32,6 +32,10 @@
   display: none;
 }
 
+.tabs__input_all:checked #tabs__content_all {
+  display: block;
+}
+
 .tabs__input_complex:checked .tabs__content_complex {
   display: block;
 }
@@ -44,8 +48,12 @@
   color: red; /*не забыть убрать*/
 }
 
+.tabs__input_simple:checked ~ .tabs__label {
+  color: green; /*не забыть убрать*/
+}
+
 .tabs__input:checked ~ .tabs__slider {
-  animation: for-slider 2s alternate ease-in-out forwards;
+  animation: for-slider 1.5s alternate ease forwards;
 }
 
 .tabs__slider {

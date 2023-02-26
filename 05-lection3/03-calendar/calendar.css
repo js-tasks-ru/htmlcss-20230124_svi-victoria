@@ -6,8 +6,8 @@
 }
 
 .calendar_preview {
-  padding: 28px 50px 40px;
-  max-width: 100%;
+  padding: 8px 12px;
+  min-width: 200px;
 }
 
 .calendar__title {

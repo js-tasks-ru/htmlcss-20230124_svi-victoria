@@ -7,6 +7,7 @@
   border-radius: 8px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .histogramm_preview {
@@ -18,26 +19,14 @@
   color: var(--black);
 }
 
-.histogramm__title_preview {
-  font-size: 14px;
-}
-
 .histogramm__link {
   font-size: 16px;
   color: var(--purple);
 }
 
-.histogramm__link_preview {
-  font-size: 14px;
-}
-
 .histogramm__statistic {
   font-size: 20px;
   color: var(--black);
-}
-
-.histogramm__statistic_preview {
-  font-size: 14px;
 }
 
 .histogramm__chart {

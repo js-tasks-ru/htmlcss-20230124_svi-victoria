@@ -1,69 +1,72 @@
 .toggler {
-    display: inline-block;
-    position: relative;
+  display: inline-block;
+  position: relative;
 }
 
 .toggler__input {
-    position: absolute;
-    outline: none;
-    clip: rect(0, 0, 0, 0);
+  position: absolute;
+  outline: none;
+  clip: rect(0, 0, 0, 0);
 }
 
 .toggler__state {
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
-    cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
 }
 
-.toggler__control { 
-    background: #FFFFFF;
-    border: 1px solid #DDE2E5;
-    border-radius: 16px;
-    height: 28px;
-    width: 52px;
-    box-sizing: border-box;
-    display: inline-flex;
-    align-items: center;
-    justify-content: left;
+.toggler__control {
+  background: #ffffff;
+  border: 1px solid #dde2e5;
+  border-radius: 16px;
+  height: 28px;
+  width: 52px;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: left;
 }
 
 .toggler__icon {
-    fill: var(--grey-2);
+  fill: var(--grey-2);
 }
 
 .toggler__title {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: var(--grey-4);
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--grey-4);
 }
 
 .toggler__input:checked ~ .toggler__state .toggler__control {
-    background: #4263EB;
-    border-color: #4263EB;
-    justify-content: right;
+  background: #4263eb;
+  border-color: #4263eb;
+  justify-content: right;
 }
 
 .toggler__input:checked ~ .toggler__state .toggler__icon {
-    fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 .toggler__input:disabled ~ .toggler__state {
-    pointer-events: none;
+  pointer-events: none;
 }
 
 .toggler__input:disabled ~ .toggler__state .toggler__control {
-    background: var(--grey-2);
+  background: var(--grey-2);
 }
 
 .toggler__input:disabled ~ .toggler__state .toggler__icon {
-    fill: var(--grey-3);
+  fill: var(--grey-3);
+}
+
+.toggler__input:disabled ~ .toggler__state .toggler__title {
+  color: var(--grey-2);
 }
 
 .toggler__input:focus ~ .toggler__state .toggler__title {
-    text-decoration: underline;
+  text-decoration: underline;
 }
-

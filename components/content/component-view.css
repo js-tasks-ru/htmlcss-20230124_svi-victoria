@@ -18,13 +18,15 @@
 }
 
 .component-view__component-card {
-  border: 1px solid var(--grey-3);
-  border-radius: 8px;
-  width: 300px;
+  /*border: 1px solid var(--grey-3);
+  border-radius: 8px;*/
+  width: 100vw;
+  margin: 70px;
 }
 
 .component-view__component-code {
-  width: 100%;
+  padding: 50px 106px 64px 42px;
+  word-wrap: break-word;
 }
 
 @media (max-width: 767px) {

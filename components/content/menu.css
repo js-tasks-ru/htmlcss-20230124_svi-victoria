@@ -2,6 +2,7 @@
   display: grid;
   grid-template-rows: 42px repeat(9, 22px) 52px 1fr;
   align-items: center;
+  padding-right: 56px;
 }
 
 .menu__title {

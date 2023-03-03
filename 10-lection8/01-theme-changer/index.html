@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- Пример использования theme-changer -->
+<html lang="ru">
+  <head>
+    <style>
+      :root {
+        --white: #ffffff; /*объявляю декаларативные переменные*/
+        --white-2: #e5e5e5;
+        --white-3: #f9fafc;
+        --black: #212429;
+        --pink: #f784ad;
+        --purple: #7048e8;
+        --blue: #374fc7;
+        --red: #f03d3e;
+        --grey-1: #f8f9fa;
+        --grey-2: #dde2e5;
+        --grey-3: #acb5bd;
+        --grey-4: #495057;
+
+        --main-background: var(--white-3); /*объявляю семантические переменные*/
+        --header-background: var(--white-2);
+        --footer-background: var(--white-2);
+        --font-active: var(--black);
+        --font-muted: var(--grey-3);
+        --font-card-type: var(--grey-4);
+        --border-color: var(--grey-3);
+        --card-background: var(--white);
+        --content-background: var(--white-3);
+        --primary: var(--blue);
+        --secondary: var(--purple);
+        --success: var(--blue);
+        --error: var(--red);
+
+      }
+
+      html[data-theme-dark] {
+          --main-background: var(--black); /*переопределяю семантические переменные*/
+          --header-background: var(--black);
+          --footer-background: var(--black);
+          --font-active: var(--white);
+          --font-muted: var(--grey-2);
+          --font-card-type: var(--grey-2);
+          --border-color: var(--white)
+          --card-background: var(--black);
+          --content-background: var(--grey-4);
+          --primary: var(--blue);
+          --secondary: var(--purple);
+          --success: var(--blue);
+          --error: var(--red);
+
+      }
+    </style>
+
+    <script defer src="./theme-changer.js"></script>
+  </head>
+  <body>
+    <input type="checkbox" id="theme-changer" />
+  </body>
+</html>

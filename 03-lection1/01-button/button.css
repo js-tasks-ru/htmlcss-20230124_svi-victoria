@@ -16,17 +16,17 @@
 
 .button_primary {
   background-color: var(--primary);
-  color: #ffffff;
+  color: var(--main-background);
 }
 
 .button_secondary {
   background-color: var(--secondary);
-  color: #ffffff;
+  color: var(--main-background);
 }
 
 .button_alternate {
-  color: var(--grey-4);
-  border: 1px solid var(--grey-3);
+  color: var(--font-card-type);
+  border: 1px solid var(--border-color);
 }
 
 .button:hover {

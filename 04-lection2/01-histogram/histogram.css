@@ -3,7 +3,7 @@
   font-style: normal;
   font-weight: 400;
   padding: 16px 24px 24px;
-  border: 1px solid var(--grey-4);
+  border: 1px solid var(--border-color);
   border-radius: 8px;
   display: flex;
   flex-wrap: wrap;
@@ -16,17 +16,17 @@
 
 .histogramm__title {
   font-size: 16px;
-  color: var(--black);
+  color: var(--font-active);
 }
 
 .histogramm__link {
   font-size: 16px;
-  color: var(--purple);
+  color: var(--secondary);
 }
 
 .histogramm__statistic {
   font-size: 20px;
-  color: var(--black);
+  color: var(--font-active);
 }
 
 .histogramm__chart {
@@ -38,7 +38,7 @@
 }
 
 .histogramm__chart-el {
-  background-color: var(--purple);
+  background-color: var(--secondary);
   margin-left: 1px;
   flex-grow: 1;
 }

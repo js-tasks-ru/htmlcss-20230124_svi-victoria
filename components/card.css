@@ -7,13 +7,25 @@
   display: flex;
 }
 
+.card__link {
+  max-width: 100%;
+  max-height: 100%;
+  flex-grow: 1;
+  text-decoration: none;
+  display: grid;
+  grid-template-rows: auto 31px 57px;
+  justify-items: center;
+  align-items: center;
+  padding: 10px 12px;
+}
+
 .card__text {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-size: 21px;
   line-height: 25px;
-  color: var(--black);
+  color: var(--font-active);
 }
 
 .card__type {

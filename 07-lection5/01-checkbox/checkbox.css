@@ -19,8 +19,8 @@
 
 .checkbox__control {
   box-sizing: border-box;
-  background: #ffffff;
-  border: 1px solid var(--grey-2);
+  background: var(--main-background);
+  border: 1px solid var(--border-color);
   border-radius: 4px;
   width: 28px;
   height: 28px;
@@ -31,6 +31,7 @@
 
 .checkbox__icon {
   display: none;
+  fill: var(--white);
 }
 
 .checkbox__title {
@@ -39,12 +40,12 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: var(--grey-4);
+  color: var(--font-card-type);
 }
 
 .checkbox__input:checked ~ .checkbox__state .checkbox__control {
-  background: #4263eb;
-  border-color: #4263eb;
+  background: var(--primary);
+  border-color: var(--primary);
 }
 
 .checkbox__input:checked ~ .checkbox__state .checkbox__icon {
@@ -52,7 +53,7 @@
 }
 
 .checkbox__input:disabled ~ .checkbox__state .checkbox__control {
-  background: var(--grey-2);
+  background: var(--font-muted);
 }
 
 .checkbox__input:disabled ~ .checkbox__state {
@@ -60,7 +61,7 @@
 }
 
 .checkbox__input:disabled ~ .checkbox__state .checkbox__title {
-  color: var(--grey-2);
+  color: var(--font-muted);
 }
 
 .checkbox__input:focus ~ .checkbox__state .checkbox__title {

@@ -19,8 +19,8 @@
 
 .radio__control {
   box-sizing: border-box;
-  background: #ffffff;
-  border: 2px solid var(--grey-2);
+  background: var(--main-background);
+  border: 2px solid var(--border-color);
   border-radius: 14px;
   width: 28px;
   height: 28px;
@@ -39,7 +39,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: var(--grey-4);
+  color: var(--font-card-type);
 }
 
 .radio__input:checked ~ .radio__state .radio__icon {
@@ -47,15 +47,15 @@
 }
 
 .radio__input:checked ~ .radio__state .radio__control {
-  border: 2px solid #4263eb;
+  border: 2px solid var(--primary);
 }
 
 .radio__input:disabled ~ .radio__state .radio__control {
-  background: var(--grey-2);
+  background: var(--font-muted);
 }
 
 .radio__input:disabled ~ .radio__state .radio__title {
-  color: var(--grey-2);
+  color: var(--font-muted);
 }
 
 .radio__input:disabled ~ .radio__state {

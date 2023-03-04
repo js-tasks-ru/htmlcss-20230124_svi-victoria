@@ -1,5 +1,5 @@
 .header {
-  background: var(--grey-2);
+  background: var(--header-background);
   padding-top: 25px;
 }
 
@@ -9,7 +9,7 @@
   font-weight: 500;
   font-size: 50px;
   line-height: 64px;
-  color: var(--black);
+  color: var(--font-active);
 }
 
 .header_transparent {
@@ -25,7 +25,7 @@
 
 @media (max-width: 767px) {
   .header {
-    background: #ffffff;
+    background: var(--card-background);
   }
 }
 
@@ -40,6 +40,6 @@
     font-weight: 400;
     font-size: 28px;
     line-height: 38px;
-    color: var(--grey-4);
+    color: var(--font-card-type);
   }
 }

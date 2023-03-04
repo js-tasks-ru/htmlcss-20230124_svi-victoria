@@ -9,7 +9,7 @@
 }
 
 .modal__inner {
-  background: #ffffff;
+  background: var(--main-background);
   border-radius: 8px;
   width: 348px;
   padding: 30px 40px 33px;
@@ -28,7 +28,7 @@
   line-height: 24px;
   font-weight: 600;
   font-size: 20px;
-  color: #334d6e;
+  color: var(--font-active);
   padding-bottom: 14px;
 }
 
@@ -38,7 +38,7 @@
   line-height: 24px;
   font-weight: 400;
   font-size: 16px;
-  color: #495057;
+  color: var(--font-active);
 }
 
 .modal__icon-cross {

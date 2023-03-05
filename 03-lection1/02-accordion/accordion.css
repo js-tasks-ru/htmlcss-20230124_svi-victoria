@@ -8,10 +8,6 @@
   max-width: 730px;
 }
 
-.accordion_preview {
-  width: 100%;
-}
-
 .accordion__item {
   border: 1px solid var(--border-color);
   border-radius: 8px;

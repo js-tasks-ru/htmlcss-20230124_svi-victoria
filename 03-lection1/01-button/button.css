@@ -10,6 +10,13 @@
   transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 }
 
+.button__wrapper {
+  gap: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
 .button_preview {
   padding: 15px;
 }

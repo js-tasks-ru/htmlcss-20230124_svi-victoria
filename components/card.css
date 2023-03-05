@@ -1,22 +1,25 @@
 .card {
   width: 350px;
   height: 367px;
-  background: var(--white);
+  background: var(--card-background);
   box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
   border-radius: 12px;
   display: flex;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-.card__link {
-  max-width: 100%;
-  max-height: 100%;
+.card__layout {
   flex-grow: 1;
-  text-decoration: none;
   display: grid;
   grid-template-rows: auto 31px 57px;
   justify-items: center;
   align-items: center;
   padding: 10px 12px;
+}
+
+.card__inner {
+  width: 100%;
 }
 
 .card__text {
@@ -33,12 +36,4 @@
   font-size: 16px;
   line-height: 19px;
   align-self: flex-start;
-}
-
-@media (max-width: 767px) {
-  .card {
-    height: 210px;
-    width: 164px;
-    border-radius: 8px;
-  }
 }

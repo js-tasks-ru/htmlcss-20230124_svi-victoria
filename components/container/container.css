@@ -3,23 +3,6 @@
   margin: 0 auto;
 }
 
-.container_button {
-  padding: 8px 12px;
-  gap: 16px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-}
-
-.container_sceleton {
-  min-width: 300px;
-}
-
-.container_histogramm {
-  min-width: 300px;
-  min-height: 137px;
-}
-
 @media (max-width: 767px) {
   .container {
     margin: 0 15px;

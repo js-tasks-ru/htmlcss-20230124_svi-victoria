@@ -32,6 +32,7 @@
 .checkbox__icon {
   display: none;
   fill: var(--white);
+  height: 11.5px;
 }
 
 .checkbox__title {

@@ -4,8 +4,8 @@
   padding: 24px 40px 32px 24px;
 }
 
-.skeleton_preview {
-  padding: 8px 12px;
+.skeleton__wrapper {
+  width: 100%;
 }
 
 .skeleton__header {

@@ -1,10 +1,12 @@
 .component-view {
-  background: #ffffff;
+  background: var(--main-background);
   box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
   border-radius: 12px;
   padding-top: 32px;
   padding-left: 48px;
-  position: relative;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .component-view__title {
@@ -13,20 +15,18 @@
   font-weight: 400;
   font-size: 28px;
   line-height: 38px;
-  color: var(--grey-4);
+  color: var(--font-card-type);
   padding-bottom: 24px;
 }
 
 .component-view__component-card {
-  /*border: 1px solid var(--grey-3);
-  border-radius: 8px;*/
-  width: 100vw;
-  margin: 70px;
+  /*margin: 70px;*/
+  height: fit-content;
+  position: relative;
 }
 
 .component-view__component-code {
-  padding: 50px 106px 64px 42px;
-  word-wrap: break-word;
+  color: var(--font-active);
 }
 
 @media (max-width: 767px) {
@@ -34,85 +34,4 @@
     font-size: 20px;
     line-height: 26px;
   }
-}
-
-.component-view__divider {
-  width: 100%;
-  height: 1px;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
-}
-
-/* стили для табов перенести/удалить в файл tabs.css после аппрува ветки с этим файлом */
-.tabs__wrap_preview {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: flex-start;
-
-  padding: 64px 0 0px;
-}
-
-.tabs__wrap_state {
-  display: flex;
-  flex-direction: row;
-  gap: 40px;
-}
-
-.tabs__state {
-  position: relative;
-}
-
-.tabs__input {
-  position: absolute;
-  outline: none;
-  clip: rect(0, 0, 0, 0);
-}
-
-.tabs__label {
-  cursor: pointer;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: var(--black);
-  padding-bottom: 8px;
-}
-
-.tabs__slider {
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.tabs__input:checked ~ .tabs__slider {
-  animation: for-slider 250ms alternate ease-out forwards;
-}
-
-@keyframes for-slider {
-  from {
-    width: 0px;
-    height: 5px;
-    visibility: hidden;
-  }
-  to {
-    width: 100%;
-    height: 5px;
-    background-color: var(--black);
-  }
-}
-
-.tabs__content_preview {
-  display: none;
-  padding-top: 50px;
-}
-
-.tabs__wrap_preview:has(.tabs__input_html:checked) .tabs__content_preview-html {
-  display: block;
-}
-.tabs__wrap_preview:has(.tabs__input_css:checked) .tabs__content_preview-css {
-  display: block;
 }

@@ -2,7 +2,7 @@
   display: grid;
   grid-template-rows: 42px repeat(9, 22px) 52px 1fr;
   align-items: center;
-  padding-right: 56px;
+  width: 100%;
 }
 
 .menu__title {
@@ -11,7 +11,7 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 26px;
-  color: #000000;
+  color: var(--font-active);
 }
 
 .menu__item {
@@ -20,7 +20,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
-  color: var(--black);
+  color: var(--font-active);
 }
 
 .menu__item_active {
@@ -29,7 +29,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
-  color: #d84910;
+  color: var(--red);
 }
 
 @media (max-width: 767px) {

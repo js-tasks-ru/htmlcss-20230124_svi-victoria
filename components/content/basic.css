@@ -1,17 +1,17 @@
 .basic {
-    background-color: #F9FAFC;
-    border-top: 1px solid var(--grey-2);
-    border-bottom: 1px solid (--grey-2);
-    padding: 67px 0px 0px;
+  background-color: var(--main-background);
+  border-top: 1px solid var(--font-muted);
+  border-bottom: 1px solid var(--font-muted);
+  padding: 67px 0px 0px;
 }
 
 .basic__container {
-    display: grid;
-    grid-template-columns: 1fr 3fr; 
+  display: grid;
+  grid-template-columns: 1fr 3fr;
 }
 
 @media (max-width: 767px) {
-    .basic__container {
-        display: block;
-    };
+  .basic__container {
+    display: block;
+  }
 }

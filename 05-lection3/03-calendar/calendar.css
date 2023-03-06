@@ -57,10 +57,6 @@
   color: var(--font-muted);
 }
 
-.calendar__item_weekday_preview {
-  font-size: 12px;
-}
-
 .calendar__item_day {
   color: var(--font-active);
 }

@@ -4,10 +4,6 @@
   padding: 24px 40px 32px 24px;
 }
 
-.skeleton__wrapper {
-  width: 100%;
-}
-
 .skeleton__header {
   display: flex;
   align-items: center;

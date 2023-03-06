@@ -22,6 +22,26 @@
   width: 100%;
 }
 
+.card__placing_three-column-sections {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.card__placing_three-row-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.card__placing_six-sections {
+  gap: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
 .card__text {
   font-family: 'Roboto';
   font-style: normal;

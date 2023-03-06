@@ -9,3 +9,9 @@
   height: 24px;
   fill: var(--font-muted);
 }
+
+@media (max-width: 767px) {
+  .theme-changer {
+    display: none;
+  }
+}

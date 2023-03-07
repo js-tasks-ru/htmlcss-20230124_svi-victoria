@@ -22,6 +22,7 @@
   width: 100%;
   margin-bottom: 8px;
   background: var(--font-muted);
+  animation: gradient 2s linear reverse infinite;
 }
 
 .skeleton__line:last-child {
@@ -42,4 +43,17 @@
   height: 64px;
   border-radius: 50%;
   background: var(--font-muted);
+}
+
+@keyframes gradient {
+  from {
+    background: var(--font-muted);
+  }
+  to {
+    background: linear-gradient(
+      90deg,
+      var(--font-muted),
+      var(--main-background)
+    );
+  }
 }

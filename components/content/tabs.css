@@ -15,7 +15,7 @@
   padding-top: 40px;
   padding-bottom: 5px;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   flex-direction: row;
   justify-content: flex-start;
   gap: 40px;
@@ -72,11 +72,15 @@
   display: flex;
 }
 
-.tabs:has(.tabs__input_complex:checked) .tabs__section_complex {
+.tabs:has(.tabs__input_atoms:checked) .tabs__section_atoms {
   display: flex;
 }
 
-.tabs:has(.tabs__input_simple:checked) .tabs__section_simple {
+.tabs:has(.tabs__input_molecules:checked) .tabs__section_molecules {
+  display: flex;
+}
+
+.tabs:has(.tabs__input_organisms:checked) .tabs__section_organisms {
   display: flex;
 }
 
@@ -89,6 +93,6 @@
 @media (max-width: 767px) {
   .tabs__wrapper {
     background: var(--main-background);
-    overflow: scroll;
+    overflow-x: scroll;
   }
 }

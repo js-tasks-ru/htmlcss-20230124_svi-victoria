@@ -83,23 +83,37 @@
               </div>
               <div class="tabs__state">
                 <input
-                  class="tabs__input tabs__input_complex"
+                  class="tabs__input tabs__input_atoms"
                   type="radio"
-                  id="#complex-tab"
+                  id="#atoms-tab"
                   name="tab"
                 />
-                <label class="tabs__label" for="#complex-tab">Complex</label>
+                <label class="tabs__label" for="#atoms-tab">Atoms</label>
 
                 <div class="tabs__slider"></div>
               </div>
               <div class="tabs__state">
                 <input
-                  class="tabs__input tabs__input_simple"
+                  class="tabs__input tabs__input_molecules"
                   type="radio"
-                  id="#simple-tab"
+                  id="#molecules-tab"
                   name="tab"
                 />
-                <label class="tabs__label" for="#simple-tab">Simple</label>
+                <label class="tabs__label" for="#molecules-tab"
+                  >Molecules</label
+                >
+                <div class="tabs__slider"></div>
+              </div>
+              <div class="tabs__state">
+                <input
+                  class="tabs__input tabs__input_organisms"
+                  type="radio"
+                  id="#organisms-tab"
+                  name="tab"
+                />
+                <label class="tabs__label" for="#organisms-tab"
+                  >Organisms</label
+                >
                 <div class="tabs__slider"></div>
               </div>
             </div>
@@ -122,7 +136,7 @@
                   <div class="tooltip_preview tooltip__bubble">Helper text</div>
                 </div>
                 <h2 class="card__text">Tooltip</h2>
-                <p class="card__text card__type">Complex</p>
+                <p class="card__text card__type">Atom</p>
               </div>
             </a>
             <a class="card" href=".">
@@ -204,7 +218,7 @@
                 </div>
 
                 <h2 class="card__text">Calendar</h2>
-                <p class="card__text card__type">Complex</p>
+                <p class="card__text card__type">Molecule</p>
               </div>
             </a>
             <a class="card" href=".">
@@ -233,7 +247,7 @@
                   </div>
                 </div>
                 <h2 class="card__text">Modal</h2>
-                <p class="card__text card__type">Complex</p>
+                <p class="card__text card__type">Organism</p>
               </div>
             </a>
 
@@ -278,7 +292,7 @@
                   </div>
                 </div>
                 <h2 class="card__text">Accordion</h2>
-                <p class="card__text card__type">Complex</p>
+                <p class="card__text card__type">Organism</p>
               </div>
             </a>
 
@@ -446,7 +460,7 @@
                   </div>
                 </div>
                 <h2 class="card__text">Custom form elements</h2>
-                <p class="card__text card__type">Complex</p>
+                <p class="card__text card__type">Molecule</p>
               </div>
             </a>
             <a class="card" href=".">
@@ -493,7 +507,7 @@
                   </div>
                 </div>
                 <h2 class="card__text">Histogramm</h2>
-                <p class="card__text card__type">Element</p>
+                <p class="card__text card__type">Organism</p>
               </div>
             </a>
             <a class="card" href=".">
@@ -506,7 +520,7 @@
                   />
                 </div>
                 <h2 class="card__text">Avatar</h2>
-                <p class="card__text card__type">Element</p>
+                <p class="card__text card__type">Atom</p>
               </div>
             </a>
             <a class="card" href=".">
@@ -538,7 +552,7 @@
                   </button>
                 </div>
                 <h2 class="card__text">Button</h2>
-                <p class="card__text card__type">Element</p>
+                <p class="card__text card__type">Atom</p>
               </div>
             </a>
             <a class="card" href=".">
@@ -561,13 +575,13 @@
                 </div>
 
                 <h2 class="card__text">Sceleton</h2>
-                <p class="card__text card__type">Element</p>
+                <p class="card__text card__type">Molecule</p>
               </div>
             </a>
           </div>
           <!--конец секции all-->
-          <div class="tabs__section tabs__section_complex">
-            <!--начало секции complex-->
+          <div class="tabs__section tabs__section_atoms">
+            <!--начало секции atoms-->
             <a class="card" href=".">
               <div class="card__layout">
                 <div class="tooltip">
@@ -581,166 +595,58 @@
                   <div class="tooltip_preview tooltip__bubble">Helper text</div>
                 </div>
                 <h2 class="card__text">Tooltip</h2>
-                <p class="card__text card__type">Complex</p>
+                <p class="card__text card__type">Atom</p>
               </div>
             </a>
             <a class="card" href=".">
               <div class="card__layout">
-                <div class="calendar_preview calendar">
-                  <h1 class="calendar__title">October 2019</h1>
-                  <div class="calendar__wrapper">
-                    <div class="calendar__inner">
-                      <span class="calendar__item calendar__item_weekday"
-                        >Mon</span
-                      >
-                      <span class="calendar__item calendar__item_weekday"
-                        >Thu</span
-                      >
-                      <span class="calendar__item calendar__item_weekday"
-                        >Wed</span
-                      >
-                      <span class="calendar__item calendar__item_weekday"
-                        >Thu</span
-                      >
-                      <span class="calendar__item calendar__item_weekday"
-                        >Fri</span
-                      >
-                      <span class="calendar__item calendar__item_weekday"
-                        >Sat</span
-                      >
-                      <span class="calendar__item calendar__item_weekday"
-                        >Sun</span
-                      >
-                      <span class="calendar__item calendar__item_day"></span>
-                      <span class="calendar__item calendar__item_day"></span>
-                      <span class="calendar__item calendar__item_day"></span>
-                      <span class="calendar__item calendar__item_day"></span>
-                      <span class="calendar__item calendar__item_day">1</span>
-                      <span class="calendar__item calendar__item_day">2</span>
-                      <span class="calendar__item calendar__item_day">3</span>
-                      <span class="calendar__item calendar__item_day">4</span>
-                      <span class="calendar__item calendar__item_day">5</span>
-                      <span class="calendar__item calendar__item_day">6</span>
-                      <span class="calendar__item calendar__item_day">7</span>
-                      <span class="calendar__item calendar__item_day">8</span>
-                      <span class="calendar__item calendar__item_day">9</span>
-                      <span class="calendar__item calendar__item_day">10</span>
-                      <span class="calendar__item calendar__item_day">11</span>
-                      <span class="calendar__item calendar__item_day">12</span>
-                      <span class="calendar__item calendar__item_day">13</span>
-                      <span class="calendar__item calendar__item_day">14</span>
-                      <span class="calendar__item calendar__item_day">15</span>
-                      <span class="calendar__item calendar__item_day">16</span>
-                      <span class="calendar__item calendar__item_day">17</span>
-                      <span class="calendar__item calendar__item_active"
-                        >18</span
-                      >
-                      <span class="calendar__item calendar__item_between-active"
-                        >19</span
-                      >
-                      <span class="calendar__item calendar__item_between-active"
-                        >20</span
-                      >
-                      <span class="calendar__item calendar__item_between-active"
-                        >21</span
-                      >
-                      <span class="calendar__item calendar__item_between-active"
-                        >22</span
-                      >
-                      <span class="calendar__item calendar__item_active"
-                        >23</span
-                      >
-                      <span class="calendar__item calendar__item_day">24</span>
-                      <span class="calendar__item calendar__item_day">25</span>
-                      <span class="calendar__item calendar__item_day">26</span>
-                      <span class="calendar__item calendar__item_day">27</span>
-                      <span class="calendar__item calendar__item_day">28</span>
-                      <span class="calendar__item calendar__item_day">29</span>
-                      <span class="calendar__item calendar__item_day">30</span>
-                      <span class="calendar__item calendar__item_day">31</span>
-                    </div>
-                  </div>
+                <div class="card__placing_six-sections">
+                  <button class="button button_preview button_primary">
+                    Primary
+                  </button>
+                  <button class="button button_preview button_primary" disabled>
+                    Primary disabled
+                  </button>
+                  <button class="button button_preview button_secondary">
+                    Secondary
+                  </button>
+                  <button
+                    class="button button_preview button_secondary"
+                    disabled
+                  >
+                    Secondary disabled
+                  </button>
+                  <button class="button button_preview button_alternate">
+                    Alternate
+                  </button>
+                  <button
+                    class="button button_preview button_alternate"
+                    disabled
+                  >
+                    Alternate disabled
+                  </button>
                 </div>
-
-                <h2 class="card__text">Calendar</h2>
-                <p class="card__text card__type">Complex</p>
+                <h2 class="card__text">Button</h2>
+                <p class="card__text card__type">Atom</p>
               </div>
             </a>
             <a class="card" href=".">
               <div class="card__layout">
-                <button class="button button_primary" id="modal-open">
-                  Open modal
-                </button>
-                <div class="modal" id="modal">
-                  <div class="modal__inner">
-                    <h1 class="modal__title">Modal title</h1>
-                    <svg class="modal__icon-cross">
-                      <use
-                        xlink:href="assets/images/icons-sprite.svg#cross"
-                        id="modal-close"
-                      ></use>
-                    </svg>
-                    <p class="modal__text">
-                      Amet minim mollit non deserunt ullamco est sit aliqua
-                      dolor do amet sint. Velit officia consequat duis enim
-                      velit mollit. Exercitation veniam consequat sunt nostrud
-                      amet. Amet minim mollit non deserunt ullamco est sit
-                      aliqua dolor do amet sint. Velit officia consequat duis
-                      enim velit mollit. Exercitation veniam consequat sunt
-                      nostrud amet.
-                    </p>
-                  </div>
+                <div class="avatar avatar_preview">
+                  <img
+                    class="avatar__img"
+                    src="06-lection4/01-avatar/public/avatar-200.jpg"
+                    alt="Компонент аватар"
+                  />
                 </div>
-                <h2 class="card__text">Modal</h2>
-                <p class="card__text card__type">Complex</p>
+                <h2 class="card__text">Avatar</h2>
+                <p class="card__text card__type">Atom</p>
               </div>
             </a>
-
-            <a class="card" href=".">
-              <div class="card__layout">
-                <div class="card__inner">
-                  <div class="accordion">
-                    <details class="accordion__item" open>
-                      <summary class="accordion__heading">
-                        Accordion item 1
-                        <svg class="accordion__icon-daw">
-                          <use href="assets/images/icons-sprite.svg#daw"></use>
-                        </svg>
-                      </summary>
-
-                      <div class="accordion__content">
-                        Text for accordion item 1
-                      </div>
-                    </details>
-                    <details class="accordion__item">
-                      <summary class="accordion__heading">
-                        Accordion item 2
-                        <svg class="accordion__icon-daw">
-                          <use href="assets/images/icons-sprite.svg#daw"></use>
-                        </svg>
-                      </summary>
-                      <div class="accordion__content">
-                        Text for accordion item 2
-                      </div>
-                    </details>
-                    <details class="accordion__item">
-                      <summary class="accordion__heading">
-                        Accordion item 3
-                        <svg class="accordion__icon-daw">
-                          <use href="assets/images/icons-sprite.svg#daw"></use>
-                        </svg>
-                      </summary>
-                      <div class="accordion__content">
-                        Text for accordion item 3
-                      </div>
-                    </details>
-                  </div>
-                </div>
-                <h2 class="card__text">Accordion</h2>
-                <p class="card__text card__type">Complex</p>
-              </div>
-            </a>
-
+          </div>
+          <!--конец секции atoms-->
+          <div class="tabs__section tabs__section_molecules">
+            <!--начало секции molecules-->
             <a class="card" href=".">
               <div class="card__layout">
                 <div class="card__placing_three-row-sections">
@@ -905,14 +811,147 @@
                   </div>
                 </div>
                 <h2 class="card__text">Custom form elements</h2>
-                <p class="card__text card__type">Complex</p>
+                <p class="card__text card__type">Molecule</p>
+              </div>
+            </a>
+            <a class="card" href=".">
+              <div class="card__layout">
+                <div class="card__inner">
+                  <div class="skeleton">
+                    <div class="skeleton__header">
+                      <div class="skeleton__circle"></div>
+                      <div class="skeleton__title">
+                        <div class="skeleton__line skeleton__line_small"></div>
+                        <div class="skeleton__line skeleton__line_middle"></div>
+                      </div>
+                    </div>
+
+                    <div class="skeleton__body">
+                      <div class="skeleton__line"></div>
+                      <div class="skeleton__line"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <h2 class="card__text">Sceleton</h2>
+                <p class="card__text card__type">Molecule</p>
+              </div>
+            </a>
+            <a class="card" href=".">
+              <div class="card__layout">
+                <div class="calendar_preview calendar">
+                  <h1 class="calendar__title">October 2019</h1>
+                  <div class="calendar__wrapper">
+                    <div class="calendar__inner">
+                      <span class="calendar__item calendar__item_weekday"
+                        >Mon</span
+                      >
+                      <span class="calendar__item calendar__item_weekday"
+                        >Thu</span
+                      >
+                      <span class="calendar__item calendar__item_weekday"
+                        >Wed</span
+                      >
+                      <span class="calendar__item calendar__item_weekday"
+                        >Thu</span
+                      >
+                      <span class="calendar__item calendar__item_weekday"
+                        >Fri</span
+                      >
+                      <span class="calendar__item calendar__item_weekday"
+                        >Sat</span
+                      >
+                      <span class="calendar__item calendar__item_weekday"
+                        >Sun</span
+                      >
+                      <span class="calendar__item calendar__item_day"></span>
+                      <span class="calendar__item calendar__item_day"></span>
+                      <span class="calendar__item calendar__item_day"></span>
+                      <span class="calendar__item calendar__item_day"></span>
+                      <span class="calendar__item calendar__item_day">1</span>
+                      <span class="calendar__item calendar__item_day">2</span>
+                      <span class="calendar__item calendar__item_day">3</span>
+                      <span class="calendar__item calendar__item_day">4</span>
+                      <span class="calendar__item calendar__item_day">5</span>
+                      <span class="calendar__item calendar__item_day">6</span>
+                      <span class="calendar__item calendar__item_day">7</span>
+                      <span class="calendar__item calendar__item_day">8</span>
+                      <span class="calendar__item calendar__item_day">9</span>
+                      <span class="calendar__item calendar__item_day">10</span>
+                      <span class="calendar__item calendar__item_day">11</span>
+                      <span class="calendar__item calendar__item_day">12</span>
+                      <span class="calendar__item calendar__item_day">13</span>
+                      <span class="calendar__item calendar__item_day">14</span>
+                      <span class="calendar__item calendar__item_day">15</span>
+                      <span class="calendar__item calendar__item_day">16</span>
+                      <span class="calendar__item calendar__item_day">17</span>
+                      <span class="calendar__item calendar__item_active"
+                        >18</span
+                      >
+                      <span class="calendar__item calendar__item_between-active"
+                        >19</span
+                      >
+                      <span class="calendar__item calendar__item_between-active"
+                        >20</span
+                      >
+                      <span class="calendar__item calendar__item_between-active"
+                        >21</span
+                      >
+                      <span class="calendar__item calendar__item_between-active"
+                        >22</span
+                      >
+                      <span class="calendar__item calendar__item_active"
+                        >23</span
+                      >
+                      <span class="calendar__item calendar__item_day">24</span>
+                      <span class="calendar__item calendar__item_day">25</span>
+                      <span class="calendar__item calendar__item_day">26</span>
+                      <span class="calendar__item calendar__item_day">27</span>
+                      <span class="calendar__item calendar__item_day">28</span>
+                      <span class="calendar__item calendar__item_day">29</span>
+                      <span class="calendar__item calendar__item_day">30</span>
+                      <span class="calendar__item calendar__item_day">31</span>
+                    </div>
+                  </div>
+                </div>
+
+                <h2 class="card__text">Calendar</h2>
+                <p class="card__text card__type">Molecule</p>
               </div>
             </a>
           </div>
-          <!--конец секции complex-->
-          <div class="tabs__section tabs__section_simple">
-            <!--начало секции simple-->
-
+          <!--конец секции molecules-->
+          <div class="tabs__section tabs__section_organisms">
+            <!--начало секции orgamisms-->
+            <a class="card" href=".">
+              <div class="card__layout">
+                <button class="button button_primary" id="modal-open">
+                  Open modal
+                </button>
+                <div class="modal" id="modal">
+                  <div class="modal__inner">
+                    <h1 class="modal__title">Modal title</h1>
+                    <svg class="modal__icon-cross">
+                      <use
+                        xlink:href="assets/images/icons-sprite.svg#cross"
+                        id="modal-close"
+                      ></use>
+                    </svg>
+                    <p class="modal__text">
+                      Amet minim mollit non deserunt ullamco est sit aliqua
+                      dolor do amet sint. Velit officia consequat duis enim
+                      velit mollit. Exercitation veniam consequat sunt nostrud
+                      amet. Amet minim mollit non deserunt ullamco est sit
+                      aliqua dolor do amet sint. Velit officia consequat duis
+                      enim velit mollit. Exercitation veniam consequat sunt
+                      nostrud amet.
+                    </p>
+                  </div>
+                </div>
+                <h2 class="card__text">Modal</h2>
+                <p class="card__text card__type">Organism</p>
+              </div>
+            </a>
             <a class="card" href=".">
               <div class="card__layout">
                 <div class="card__inner">
@@ -957,79 +996,55 @@
                   </div>
                 </div>
                 <h2 class="card__text">Histogramm</h2>
-                <p class="card__text card__type">Element</p>
-              </div>
-            </a>
-            <a class="card" href=".">
-              <div class="card__layout">
-                <div class="avatar avatar_preview">
-                  <img
-                    class="avatar__img"
-                    src="06-lection4/01-avatar/public/avatar-200.jpg"
-                    alt="Компонент аватар"
-                  />
-                </div>
-                <h2 class="card__text">Avatar</h2>
-                <p class="card__text card__type">Element</p>
-              </div>
-            </a>
-            <a class="card" href=".">
-              <div class="card__layout">
-                <div class="card__placing_six-sections">
-                  <button class="button button_preview button_primary">
-                    Primary
-                  </button>
-                  <button class="button button_preview button_primary" disabled>
-                    Primary disabled
-                  </button>
-                  <button class="button button_preview button_secondary">
-                    Secondary
-                  </button>
-                  <button
-                    class="button button_preview button_secondary"
-                    disabled
-                  >
-                    Secondary disabled
-                  </button>
-                  <button class="button button_preview button_alternate">
-                    Alternate
-                  </button>
-                  <button
-                    class="button button_preview button_alternate"
-                    disabled
-                  >
-                    Alternate disabled
-                  </button>
-                </div>
-                <h2 class="card__text">Button</h2>
-                <p class="card__text card__type">Element</p>
+                <p class="card__text card__type">Organism</p>
               </div>
             </a>
             <a class="card" href=".">
               <div class="card__layout">
                 <div class="card__inner">
-                  <div class="skeleton">
-                    <div class="skeleton__header">
-                      <div class="skeleton__circle"></div>
-                      <div class="skeleton__title">
-                        <div class="skeleton__line skeleton__line_small"></div>
-                        <div class="skeleton__line skeleton__line_middle"></div>
-                      </div>
-                    </div>
+                  <div class="accordion">
+                    <details class="accordion__item" open>
+                      <summary class="accordion__heading">
+                        Accordion item 1
+                        <svg class="accordion__icon-daw">
+                          <use href="assets/images/icons-sprite.svg#daw"></use>
+                        </svg>
+                      </summary>
 
-                    <div class="skeleton__body">
-                      <div class="skeleton__line"></div>
-                      <div class="skeleton__line"></div>
-                    </div>
+                      <div class="accordion__content">
+                        Text for accordion item 1
+                      </div>
+                    </details>
+                    <details class="accordion__item">
+                      <summary class="accordion__heading">
+                        Accordion item 2
+                        <svg class="accordion__icon-daw">
+                          <use href="assets/images/icons-sprite.svg#daw"></use>
+                        </svg>
+                      </summary>
+                      <div class="accordion__content">
+                        Text for accordion item 2
+                      </div>
+                    </details>
+                    <details class="accordion__item">
+                      <summary class="accordion__heading">
+                        Accordion item 3
+                        <svg class="accordion__icon-daw">
+                          <use href="assets/images/icons-sprite.svg#daw"></use>
+                        </svg>
+                      </summary>
+                      <div class="accordion__content">
+                        Text for accordion item 3
+                      </div>
+                    </details>
                   </div>
                 </div>
-
-                <h2 class="card__text">Sceleton</h2>
-                <p class="card__text card__type">Element</p>
+                <h2 class="card__text">Accordion</h2>
+                <p class="card__text card__type">Organism</p>
               </div>
             </a>
           </div>
-          <!--конец секции simple-->
+          <!--конец секции orgamisms-->
         </div>
         <!--конец контейнера-->
 

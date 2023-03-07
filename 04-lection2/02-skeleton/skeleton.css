@@ -21,8 +21,8 @@
   max-width: 100%;
   width: 100%;
   margin-bottom: 8px;
-  background: var(--font-muted);
-  animation: gradient 2s linear reverse infinite;
+  background: linear-gradient(90deg, var(--font-muted), var(--main-background));
+  animation: gradient 2s forwards ease infinite;
 }
 
 .skeleton__line:last-child {
@@ -47,13 +47,25 @@
 
 @keyframes gradient {
   from {
-    background: var(--font-muted);
+    background: linear-gradient(
+      90deg,
+      var(--font-muted) 0%,
+      var(--main-background) 50%
+    );
+  }
+
+  50% {
+    background: linear-gradient(
+      90deg,
+      var(--font-muted) 50%,
+      var(--main-background) 100%
+    );
   }
   to {
     background: linear-gradient(
       90deg,
-      var(--font-muted),
-      var(--main-background)
+      var(--font-muted) 0%,
+      var(--main-background) 50%
     );
   }
 }

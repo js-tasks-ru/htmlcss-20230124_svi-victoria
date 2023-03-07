@@ -89,5 +89,6 @@
 @media (max-width: 767px) {
   .tabs__wrapper {
     background: var(--main-background);
+    overflow: scroll;
   }
 }

@@ -1,74 +1,75 @@
 .form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    color: var(--grey-4);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: var(--grey-4);
 }
 
 .form-group__control {
-    min-height: 56px; 
-    min-width: 356px;
-    display: flex;
-    position: relative;
+  min-height: 56px;
+  min-width: 356px;
+  display: flex;
+  position: relative;
 }
 
 .form-group__label {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 18px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: var(--grey-3);
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--grey-3);
 }
 
 .form-group__input {
-    flex-grow: 1;
-    box-sizing: border-box;
-    background: #FFFFFF;
-    border: 1px solid var(--grey-4);
-    border-radius: 8px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 26px;
+  flex-grow: 1;
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid var(--grey-4);
+  border-radius: 8px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
 }
 
 .form-group__icon {
-    width: 24px;
-    height: 24px;
-    position: absolute;
-    top: 18px;
-    right: 19px; 
-    display: none;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 18px;
+  right: 19px;
+  display: none;
 }
 
 .form-group_invalid .form-group__input {
-    border: 1px solid #F03D3E;
+  border: 1px solid #f03d3e;
 }
 
 .form-group_invalid .form-group__icon_error {
-    fill: #F03D3E;
-    display: block;
+  fill: #f03d3e;
+  display: block;
 }
 
 .form-group_success .form-group__icon_success {
-    fill: var(--blue);
-    display: block;
+  fill: var(--blue);
+  display: block;
 }
 
 .form-group__input:focus {
-    outline: none;
-    border: 1px solid var(--blue);
+  outline: none;
+  border: 3px solid var(--blue);
+  transition: border 0.5s linear;
 }
 
 .form-group__input::placeholder {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 26px;
-    color: var(--grey-2);
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: var(--grey-2);
 }

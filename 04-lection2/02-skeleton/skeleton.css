@@ -21,8 +21,14 @@
   max-width: 100%;
   width: 100%;
   margin-bottom: 8px;
-  background: linear-gradient(90deg, var(--font-muted), var(--main-background));
-  animation: gradient 2s forwards ease infinite;
+  background: linear-gradient(
+    90deg,
+    var(--font-muted),
+    var(--main-background),
+    var(--border-color)
+  );
+  background-size: 200% 200%;
+  animation: gradient 2s ease forwards infinite;
 }
 
 .skeleton__line:last-child {
@@ -42,30 +48,26 @@
   width: 64px;
   height: 64px;
   border-radius: 50%;
-  background: var(--font-muted);
+  background: linear-gradient(
+    90deg,
+    var(--font-muted),
+    var(--main-background),
+    var(--border-color)
+  );
+  background-size: 200% 200%;
+  animation: gradient 2s ease forwards infinite;
 }
 
 @keyframes gradient {
   from {
-    background: linear-gradient(
-      90deg,
-      var(--font-muted) 0%,
-      var(--main-background) 50%
-    );
+    background-position: 100%;
+    background-position-x: 100%;
+    background-position-y: center;
   }
 
-  50% {
-    background: linear-gradient(
-      90deg,
-      var(--font-muted) 50%,
-      var(--main-background) 100%
-    );
-  }
-  to {
-    background: linear-gradient(
-      90deg,
-      var(--font-muted) 0%,
-      var(--main-background) 50%
-    );
+  100% {
+    background-position: -100%;
+    background-position-x: -100%;
+    background-position-y: center;
   }
 }

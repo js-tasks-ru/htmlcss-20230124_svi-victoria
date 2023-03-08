@@ -44,6 +44,7 @@
   background-color: var(--secondary);
   margin-left: 1px;
   flex-grow: 1;
+  animation: rising 1.5s ease-in-out reverse 1;
 }
 
 .histogramm__chart-el_1 {
@@ -84,4 +85,10 @@
 
 .histogramm__chart-el_10 {
   height: 100%;
+}
+
+@keyframes rising {
+  to {
+    height: 0;
+  }
 }

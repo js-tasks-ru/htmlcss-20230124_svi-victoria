@@ -1,79 +1,94 @@
 .histogramm {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    padding: 16px 24px 24px;
-    border: 1px solid var(--grey-4);
-    border-radius: 8px;
-    display:flex;
-    flex-wrap: wrap;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  padding: 16px 24px 24px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.histogramm__header {
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .histogramm__title {
-    font-size: 16px;
-    color: var(--black);
+  font-size: 16px;
+  color: var(--font-active);
 }
 
 .histogramm__link {
-    font-size: 16px;
-    color: var(--purple);
+  font-size: 16px;
+  color: var(--secondary);
 }
 
 .histogramm__statistic {
-    font-size: 20px;
-    color: var(--black);
+  font-size: 20px;
+  color: var(--font-active);
 }
 
 .histogramm__chart {
-    height: 50px;
-    align-self: flex-end;
-    flex-basis: 100%;
-    display: flex;
-    align-items: flex-end;
+  height: 50px;
+  align-self: flex-end;
+  flex-basis: 100%;
+  display: flex;
+  align-items: flex-end;
 }
 
 .histogramm__chart-el {
-    background-color: var(--purple);
-    margin-left: 1px;
-    flex-grow: 1;
+  background-color: var(--secondary);
+  margin-left: 1px;
+  flex-grow: 1;
+  animation: rising 1.5s ease-in-out reverse 1;
 }
 
 .histogramm__chart-el_1 {
-    height: 10%;
+  height: 10%;
 }
 
 .histogramm__chart-el_2 {
-    height: 20%;
+  height: 20%;
 }
 
 .histogramm__chart-el_3 {
-    height: 30%;
+  height: 30%;
 }
 
 .histogramm__chart-el_4 {
-    height: 40%;
+  height: 40%;
 }
 
 .histogramm__chart-el_5 {
-    height: 50%;
+  height: 50%;
 }
 
 .histogramm__chart-el_6 {
-    height: 60%;
+  height: 60%;
 }
 
 .histogramm__chart-el_7 {
-    height: 70%;
+  height: 70%;
 }
 
 .histogramm__chart-el_8 {
-    height: 80%;
+  height: 80%;
 }
 
 .histogramm__chart-el_9 {
-    height: 90%;
+  height: 90%;
 }
 
 .histogramm__chart-el_10 {
-    height: 100%;
+  height: 100%;
+}
+
+@keyframes rising {
+  to {
+    height: 0;
+  }
 }

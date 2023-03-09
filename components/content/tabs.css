@@ -1,0 +1,98 @@
+.tabs {
+  max-width: 100%;
+  background-color: var(--main-background);
+  border-bottom: 1px solid var(--border-color);
+  padding: 0px 0px 204px;
+  flex-grow: 1;
+}
+
+.tabs__wrapper {
+  background: var(--header-background);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.tabs__menu {
+  padding-top: 40px;
+  padding-bottom: 5px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 40px;
+}
+
+.tabs__state {
+  position: relative;
+}
+
+.tabs__input {
+  position: absolute;
+  outline: none;
+  clip: rect(0, 0, 0, 0);
+}
+
+.tabs__label {
+  cursor: pointer;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--font-active);
+  padding-bottom: 8px;
+}
+
+.tabs__slider {
+  position: absolute;
+  background-color: var(--font-active);
+  width: 100%;
+  height: 5px;
+  transform: scaleX(0);
+}
+
+.tabs__input:hover ~ .tabs__slider {
+  transform: scaleX(1);
+  transition: transform 250ms ease-in-out;
+}
+
+.tabs__input:checked ~ .tabs__slider {
+  transform: scaleX(1);
+  transition: transform 250ms ease-in-out;
+}
+
+.tabs__section {
+  padding-top: 68px;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  display: none;
+}
+
+.tabs:has(.tabs__input_all:checked) .tabs__section_all {
+  display: flex;
+}
+
+.tabs:has(.tabs__input_atoms:checked) .tabs__section_atoms {
+  display: flex;
+}
+
+.tabs:has(.tabs__input_molecules:checked) .tabs__section_molecules {
+  display: flex;
+}
+
+.tabs:has(.tabs__input_organisms:checked) .tabs__section_organisms {
+  display: flex;
+}
+
+@media (max-width: 767px) {
+  .tabs__section {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 767px) {
+  .tabs__wrapper {
+    background: var(--main-background);
+    overflow-x: scroll;
+  }
+}

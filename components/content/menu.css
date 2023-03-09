@@ -21,6 +21,7 @@
   font-size: 14px;
   line-height: 22px;
   color: var(--font-active);
+  text-decoration: none;
 }
 
 .menu__item_active {
@@ -32,8 +33,18 @@
   color: var(--red);
 }
 
+.menu_mobile-menu {
+  display: none;
+}
+
 @media (max-width: 767px) {
   .menu {
     display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .menu_mobile-menu {
+    display: flex;
   }
 }

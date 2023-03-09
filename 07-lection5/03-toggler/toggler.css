@@ -30,6 +30,7 @@
 
 .toggler__icon {
   fill: var(--font-muted);
+  transition: transform 1s ease;
 }
 
 .toggler__title {
@@ -53,7 +54,6 @@
 }
 
 .toggler__input:visited ~ .toggler__state .toggler__icon {
-  /*не знаю, какой селектор поставить вместо visited, но так не работает*/
   fill: var(--font-muted);
   transition: transform 1s ease;
   transform: translateX(-26px);

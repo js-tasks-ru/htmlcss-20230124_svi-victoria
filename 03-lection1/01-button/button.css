@@ -41,3 +41,12 @@
 .button:active {
   transform: translateY(3px);
 }
+
+.button_mobile-menu {
+  width: 26px;
+  height: 26px;
+  padding: 2px;
+  border: none;
+  background-color: var(--main-background);
+  position: relative;
+}

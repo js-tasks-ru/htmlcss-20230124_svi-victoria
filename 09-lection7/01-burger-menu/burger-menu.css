@@ -1,15 +1,29 @@
 .mobile-menu {
-    position:fixed;
-    background: #F9FAFC;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    transform: translateX(-100vw);
-    transition: transform 250ms linear;
+  position: fixed;
+  background: #f9fafc;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  transform: translateX(-100vw);
+  transition: transform 250ms linear;
+  display: none;
 }
 
 .mobile-menu[data-open] {
-    transform: none;
+  transform: none;
 }
 
+.mobile-menu__icon {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media (max-width: 767px) {
+  .mobile-menu {
+    display: block;
+  }
+}

@@ -1,49 +1,49 @@
 .header {
-    background: var(--grey-2);
-    padding: 25px 0 77px;
+  background: var(--header-background);
+  padding-top: 25px;
 }
-    
+
 .header__title {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 50px;
-    line-height: 64px;
-    color: var(--black);
-    
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 64px;
+  color: var(--font-active);
 }
 
 .header_transparent {
-    padding: 24px 0;
+  padding: 24px 0;
 }
 
 .header__inner {
-    margin-bottom: 41px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  margin-bottom: 41px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  fill: var(--font-active);
 }
 
 @media (max-width: 767px) {
-    .header {
-        background: #FFFFFF;
-    };
+  .header {
+    background: var(--card-background);
+  }
 }
 
 @media (max-width: 767px) {
-    .header__inner {
-        justify-content: center;
-    };
+  .header__inner {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 767px) {
-    .header__title {
+  .header__title {
     font-weight: 400;
     font-size: 28px;
     line-height: 38px;
-    color: var(--grey-4);
-    }
+    color: var(--font-card-type);
+  }
 }
-
-
-

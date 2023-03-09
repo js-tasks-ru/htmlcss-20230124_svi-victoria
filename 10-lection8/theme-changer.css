@@ -1,0 +1,17 @@
+.theme-changer {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.theme-changer__icon {
+  width: 24px;
+  height: 24px;
+  fill: var(--font-muted);
+}
+
+@media (max-width: 767px) {
+  .theme-changer {
+    display: none;
+  }
+}

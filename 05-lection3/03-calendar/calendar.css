@@ -1,68 +1,72 @@
 .calendar {
-    padding: 28px 30px 40px;
-    background: #FFFFFF;
-    border: 1px solid var(--grey-3);
-    border-radius: 8px;
+  padding: 28px 30px 40px;
+  background: var(--card-background);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+}
+
+.calendar_preview {
+  padding: 8px 12px;
+  min-width: 200px;
 }
 
 .calendar__title {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
-    color: #334D6E;
-    margin-bottom: 24px;
-    text-align: center;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--font-active);
+  margin-bottom: 24px;
+  text-align: center;
 }
 
 .calendar__wrapper {
-    position: relative;
-    padding-bottom: 100%;
+  position: relative;
+  padding-bottom: 100%;
 }
-    
-    .calendar__inner {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    display: grid;
-    grid-template-rows: repeat(6, 1fr);
-    grid-template-columns: repeat(7, 1fr);
-    grid-auto-flow: row;
-}    
+
+.calendar__inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(7, 1fr);
+  grid-auto-flow: row;
+  align-items: center;
+}
 
 .calendar__item {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 20px;
-    font-family: 'Source Sans Pro';
-    font-size: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 20px;
+  font-family: 'Source Sans Pro';
+  font-size: 16px;
 }
 
 .calendar__item_weekday {
-    font-family: 'Inter';
-    font-size: 14px;
-    color: #90A0B7;
+  font-family: 'Inter';
+  font-size: 14px;
+  color: var(--font-muted);
 }
 
 .calendar__item_day {
-    color: #334D6E;
+  color: var(--font-active);
 }
 
 .calendar__item_active {
-    color: #FFFFFF;
-    background: #4263EB;
+  color: var(--main-background);
+  background: var(--primary);
 }
 
 .calendar__item_between-active {
-    color: #FFFFFF;
-    background: #A0B1F5;
+  color: var(--main-background);
+  background: #a0b1f5;
 }
-
-

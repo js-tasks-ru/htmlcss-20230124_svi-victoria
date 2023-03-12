@@ -6,6 +6,7 @@
   flex-grow: 1;
   position: fixed;
   top: 0;
+  left: 0;
 }
 
 .modal__inner {
@@ -42,6 +43,6 @@
 }
 
 .modal__icon-cross {
-  width: 9px;
-  height: 9px;
+  width: 20px;
+  height: 20px;
 }

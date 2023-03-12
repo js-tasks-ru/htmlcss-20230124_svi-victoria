@@ -33,8 +33,10 @@
   color: var(--red);
 }
 
-.menu_mobile-menu {
-  display: none;
+.menu_mobile {
+  position: absolute;
+  left: 3.5%;
+  top: 7%;
 }
 
 @media (max-width: 767px) {
@@ -44,7 +46,8 @@
 }
 
 @media (max-width: 767px) {
-  .menu_mobile-menu {
-    display: flex;
+  .menu_mobile {
+    display: grid;
+    padding-top: 30px;
   }
 }

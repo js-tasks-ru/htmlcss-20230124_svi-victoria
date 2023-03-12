@@ -71,3 +71,9 @@
     background-position-y: center;
   }
 }
+
+@media (max-width: 767px) {
+  .skeleton {
+    padding: 12px 20px 16px 12px;
+  }
+}

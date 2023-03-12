@@ -40,6 +40,7 @@
   line-height: 24px;
   color: var(--font-active);
   padding-bottom: 8px;
+  white-space: nowrap;
 }
 
 .tabs__slider {
@@ -61,10 +62,14 @@
 
 .tabs__section {
   padding-top: 68px;
-  display: flex;
   gap: 30px;
   flex-wrap: wrap;
   display: none;
+}
+
+.tabs__code {
+  white-space: pre-wrap;
+  text-overflow: clip;
 }
 
 .tabs__input:hover ~ .tabs__slider {
@@ -111,10 +116,11 @@
 
 .tabs__section_preview {
   display: none;
-  padding: 50px 106px 64px 42px;
-  word-wrap: break-word;
-  word-break: break-word;
-  text-overflow: clip;
+  padding-top: 50px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .tabs_preview:has(.tabs__input_html:checked) .tabs__section_preview-html {
@@ -134,5 +140,11 @@
   .tabs__wrapper {
     background: var(--main-background);
     overflow-x: scroll;
+  }
+}
+
+@media (max-width: 767px) {
+  .tabs__section_preview {
+    overflow: scroll;
   }
 }

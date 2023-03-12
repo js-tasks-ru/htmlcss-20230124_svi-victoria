@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../assets/css/main.css" />
     <meta name="viewport" content="width=device-width" initial-scale="1.0" />
 
-    <title>Tooltip</title>
+    <title>Sceleton</title>
   </head>
   <body>
     <div class="page page_inner">
@@ -114,7 +114,7 @@
           <div class="basic__container">
             <div class="menu">
               <h4 class="menu__title">Components</h4>
-              <div class="menu__item_active">Tooltip</div>
+              <a class="menu__item" href="01-template-tooltip.html">Tooltip</a>
               <a class="menu__item" href="02-template-calendar.html"
                 >Calendar</a
               >
@@ -130,24 +130,28 @@
                 >Custom form elements</a
               >
               <a class="menu__item" href="08-template-button.html">Button</a>
-              <a class="menu__item" href="09-template-sceleton.html"
-                >Sceleton</a
-              >
+              <div class="menu__item menu__item_active">Sceleton</div>
 
               <a class="menu__item" href="../index.html">Main page</a>
             </div>
             <div class="component-view">
-              <h3 class="component-view__title">Tooltip</h3>
+              <h3 class="component-view__title">Sceleton</h3>
               <div class="component-view__component-card">
-                <div class="tooltip">
-                  <div class="tooltip__trigger">
-                    <svg class="tooltip__icon-help">
-                      <use
-                        xlink:href="../assets/images/icons-sprite.svg#help"
-                      ></use>
-                    </svg>
+                <div class="component-view__expander">
+                  <div class="skeleton">
+                    <div class="skeleton__header">
+                      <div class="skeleton__circle"></div>
+                      <div class="skeleton__title">
+                        <div class="skeleton__line skeleton__line_small"></div>
+                        <div class="skeleton__line skeleton__line_middle"></div>
+                      </div>
+                    </div>
+
+                    <div class="skeleton__body">
+                      <div class="skeleton__line"></div>
+                      <div class="skeleton__line"></div>
+                    </div>
                   </div>
-                  <div class="tooltip__bubble">Helper text</div>
                 </div>
               </div>
 
@@ -186,68 +190,97 @@
                   </div>
 
                   <div class="tabs__section_preview tabs__section_preview-html">
-                    <pre><code class="tabs__code">&lt;div class=&quot;tooltip&quot;&gt;
-                      &lt;div class=&quot;tooltip__trigger&quot;&gt;
-                        &lt;svg class=&quot;tooltip__icon-help&quot;&gt;
-                          &lt;use xlink:href=&quot;../../assets/images/icons-sprite.svg#help&quot;&gt;&lt;/use&gt;
-                        &lt;/svg&gt;
+                    <pre><code class="tabs__code">&lt;div class=&quot;skeleton&quot;&gt;
+                    &lt;div class=&quot;skeleton__header&quot;&gt;
+                      &lt;div class=&quot;skeleton__circle&quot;&gt;&lt;/div&gt;
+                      &lt;div class=&quot;skeleton__title&quot;&gt;
+                        &lt;div class=&quot;skeleton__line skeleton__line_small&quot;&gt;&lt;/div&gt;
+                        &lt;div class=&quot;skeleton__line skeleton__line_middle&quot;&gt;&lt;/div&gt;
                       &lt;/div&gt;
-                      &lt;div class=&quot;tooltip__bubble&quot;&gt;Helper text&lt;/div&gt;
-                    &lt;/div&gt;</code></pre>
+                    &lt;/div&gt;
+
+                    &lt;div class=&quot;skeleton__body&quot;&gt;
+                      &lt;div class=&quot;skeleton__line&quot;&gt;&lt;/div&gt;
+                      &lt;div class=&quot;skeleton__line&quot;&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;</code></pre>
                   </div>
 
                   <div class="tabs__section_preview tabs__section_preview-css">
-                    <pre><code class="tabs__code">.tooltip {
-                      display: inline-block;
-                      position: relative;
+                    <pre><code class="tabs__code">.skeleton {
+                    border: 1px solid var(--border-color);
+                    border-radius: 8px;
+                    padding: 24px 40px 32px 24px;
+                  }
+                  
+                  .skeleton__header {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 24px;
+                  }
+                  
+                  .skeleton__title {
+                    flex-shrink: 1;
+                    flex-basis: 100%;
+                    margin-left: 16px;
+                  }
+                  
+                  .skeleton__line {
+                    height: 20px;
+                    max-width: 100%;
+                    width: 100%;
+                    margin-bottom: 8px;
+                    background: linear-gradient(
+                      90deg,
+                      var(--font-muted),
+                      var(--main-background),
+                      var(--border-color)
+                    );
+                    background-size: 200% 200%;
+                    animation: gradient 2s ease forwards infinite;
+                  }
+                  
+                  .skeleton__line:last-child {
+                    margin-bottom: 0px;
+                  }
+                  
+                  .skeleton__line_small {
+                    max-width: 40%;
+                  }
+                  
+                  .skeleton__line_middle {
+                    max-width: 50%;
+                  }
+                  
+                  .skeleton__circle {
+                    flex-shrink: 0;
+                    width: 64px;
+                    height: 64px;
+                    border-radius: 50%;
+                    background: linear-gradient(
+                      90deg,
+                      var(--font-muted),
+                      var(--main-background),
+                      var(--border-color)
+                    );
+                    background-size: 200% 200%;
+                    animation: gradient 2s ease forwards infinite;
+                  }
+                  
+                  @keyframes gradient {
+                    from {
+                      background-position: 100%;
+                      background-position-x: 100%;
+                      background-position-y: center;
                     }
-                    
-                    .tooltip__trigger {
-                      cursor: pointer;
+                  
+                    100% {
+                      background-position: -100%;
+                      background-position-x: -100%;
+                      background-position-y: center;
                     }
-                    
-                    .tooltip__bubble {
-                      font-family: 'Inter';
-                      font-style: normal;
-                      font-weight: 400;
-                      font-size: 16px;
-                      line-height: 24px;
-                      text-align: center;
-                      color: #dde2e5;
-                      border-radius: 10px;
-                      padding: 13px 21px 8px;
-                      background: var(--primary);
-                      display: none;
-                      white-space: nowrap;
-                      position: absolute;
-                      left: 50%;
-                      bottom: calc(100% + 8px);
-                      transform: translateX(-50%);
-                    }
-                    
-                    .tooltip__bubble:before {
-                      content: '';
-                      border: 10px solid transparent;
-                      border-top-color: var(--primary);
-                      position: absolute;
-                      top: 100%;
-                      left: 50%;
-                      transform: translateX(-50%);
-                    }
-                    
-                    .tooltip__trigger:hover ~ .tooltip__bubble {
-                      display: block;
-                    }
-                    
-                    .tooltip__icon-help {
-                      width: 22px;
-                      height: 22px;
-                      fill: var(--primary);
-                    }
-                    
-                    .tooltip_preview {
-                      display: block;
-                    }</code></pre>
+                  }
+                  </code></pre>
                   </div>
                 </div>
               </div>

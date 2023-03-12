@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../assets/css/main.css" />
     <meta name="viewport" content="width=device-width" initial-scale="1.0" />
 
-    <title>Tooltip</title>
+    <title>Modal</title>
   </head>
   <body>
     <div class="page page_inner">
@@ -114,11 +114,11 @@
           <div class="basic__container">
             <div class="menu">
               <h4 class="menu__title">Components</h4>
-              <div class="menu__item_active">Tooltip</div>
+              <a class="menu__item" href="01-template-tooltip.html">Tooltip</a>
               <a class="menu__item" href="02-template-calendar.html"
                 >Calendar</a
               >
-              <a class="menu__item" href="03-template-modal.html">Modal</a>
+              <div class="menu__item menu__item_active">Modal</div>
               <a class="menu__item" href="04-template-histogramm.html"
                 >Histogramm</a
               >
@@ -137,17 +137,30 @@
               <a class="menu__item" href="../index.html">Main page</a>
             </div>
             <div class="component-view">
-              <h3 class="component-view__title">Tooltip</h3>
+              <h3 class="component-view__title">Modal</h3>
               <div class="component-view__component-card">
-                <div class="tooltip">
-                  <div class="tooltip__trigger">
-                    <svg class="tooltip__icon-help">
+                <button class="button button_primary" id="modal-open">
+                  Open modal
+                </button>
+                <div class="modal" id="modal">
+                  <div class="modal__inner">
+                    <h1 class="modal__title">Modal title</h1>
+                    <svg class="modal__icon-cross">
                       <use
-                        xlink:href="../assets/images/icons-sprite.svg#help"
+                        xlink:href="../../assets/images/icons-sprite.svg#cross"
+                        id="modal-close"
                       ></use>
                     </svg>
+                    <p class="modal__text">
+                      Amet minim mollit non deserunt ullamco est sit aliqua
+                      dolor do amet sint. Velit officia consequat duis enim
+                      velit mollit. Exercitation veniam consequat sunt nostrud
+                      amet. Amet minim mollit non deserunt ullamco est sit
+                      aliqua dolor do amet sint. Velit officia consequat duis
+                      enim velit mollit. Exercitation veniam consequat sunt
+                      nostrud amet.
+                    </p>
                   </div>
-                  <div class="tooltip__bubble">Helper text</div>
                 </div>
               </div>
 
@@ -186,68 +199,81 @@
                   </div>
 
                   <div class="tabs__section_preview tabs__section_preview-html">
-                    <pre><code class="tabs__code">&lt;div class=&quot;tooltip&quot;&gt;
-                      &lt;div class=&quot;tooltip__trigger&quot;&gt;
-                        &lt;svg class=&quot;tooltip__icon-help&quot;&gt;
-                          &lt;use xlink:href=&quot;../../assets/images/icons-sprite.svg#help&quot;&gt;&lt;/use&gt;
-                        &lt;/svg&gt;
-                      &lt;/div&gt;
-                      &lt;div class=&quot;tooltip__bubble&quot;&gt;Helper text&lt;/div&gt;
-                    &lt;/div&gt;</code></pre>
+                    <pre><code class="tabs__code">&lt;button class=&quot;button button_primary&quot; id=&quot;modal-open&quot;&gt;
+                    Open modal
+                  &lt;/button&gt;
+                  &lt;div class=&quot;modal&quot; id=&quot;modal&quot;&gt;
+                    &lt;div class=&quot;modal__inner&quot;&gt;
+                      &lt;h1 class=&quot;modal__title&quot;&gt;Modal title&lt;/h1&gt;
+                      &lt;svg class=&quot;modal__icon-cross&quot;&gt;
+                        &lt;use
+                          xlink:href=&quot;../../assets/images/icons-sprite.svg#cross&quot;
+                          id=&quot;modal-close&quot;
+                        &gt;&lt;/use&gt;
+                      &lt;/svg&gt;
+                      &lt;p class=&quot;modal__text&quot;&gt;
+                        Amet minim mollit non deserunt ullamco est sit aliqua
+                        dolor do amet sint. Velit officia consequat duis enim
+                        velit mollit. Exercitation veniam consequat sunt nostrud
+                        amet. Amet minim mollit non deserunt ullamco est sit
+                        aliqua dolor do amet sint. Velit officia consequat duis
+                        enim velit mollit. Exercitation veniam consequat sunt
+                        nostrud amet.
+                      &lt;/p&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;</code></pre>
                   </div>
 
                   <div class="tabs__section_preview tabs__section_preview-css">
-                    <pre><code class="tabs__code">.tooltip {
-                      display: inline-block;
-                      position: relative;
-                    }
-                    
-                    .tooltip__trigger {
-                      cursor: pointer;
-                    }
-                    
-                    .tooltip__bubble {
-                      font-family: 'Inter';
-                      font-style: normal;
-                      font-weight: 400;
-                      font-size: 16px;
-                      line-height: 24px;
-                      text-align: center;
-                      color: #dde2e5;
-                      border-radius: 10px;
-                      padding: 13px 21px 8px;
-                      background: var(--primary);
-                      display: none;
-                      white-space: nowrap;
-                      position: absolute;
-                      left: 50%;
-                      bottom: calc(100% + 8px);
-                      transform: translateX(-50%);
-                    }
-                    
-                    .tooltip__bubble:before {
-                      content: '';
-                      border: 10px solid transparent;
-                      border-top-color: var(--primary);
-                      position: absolute;
-                      top: 100%;
-                      left: 50%;
-                      transform: translateX(-50%);
-                    }
-                    
-                    .tooltip__trigger:hover ~ .tooltip__bubble {
-                      display: block;
-                    }
-                    
-                    .tooltip__icon-help {
-                      width: 22px;
-                      height: 22px;
-                      fill: var(--primary);
-                    }
-                    
-                    .tooltip_preview {
-                      display: block;
-                    }</code></pre>
+                    <pre><code class="tabs__code">.modal {
+                    display: none;
+                    background-color: rgba(196, 196, 196, 0.5);
+                    height: 100%;
+                    width: 100%;
+                    flex-grow: 1;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                  }
+                  
+                  .modal__inner {
+                    background: var(--main-background);
+                    border-radius: 8px;
+                    width: 348px;
+                    padding: 30px 40px 33px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translateX(-50%) translateY(-50%);
+                  }
+                  
+                  .modal__title {
+                    font-family: 'Inter';
+                    font-style: normal;
+                    line-height: 24px;
+                    font-weight: 600;
+                    font-size: 20px;
+                    color: var(--font-active);
+                    padding-bottom: 14px;
+                  }
+                  
+                  .modal__text {
+                    font-family: 'Inter';
+                    font-style: normal;
+                    line-height: 24px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: var(--font-active);
+                  }
+                  
+                  .modal__icon-cross {
+                    width: 20px;
+                    height: 20px;
+                  }
+                  </code></pre>
                   </div>
                 </div>
               </div>
@@ -262,4 +288,5 @@
   </body>
   <script defer src="../10-lection8/01-theme-changer/theme-changer.js"></script>
   <script defer src="../09-lection7/01-burger-menu/burger-menu.js"></script>
+  <script src="../05-lection3/02-modal/index.js"></script>
 </html>

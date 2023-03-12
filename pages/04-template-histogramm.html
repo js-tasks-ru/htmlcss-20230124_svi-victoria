@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../assets/css/main.css" />
     <meta name="viewport" content="width=device-width" initial-scale="1.0" />
 
-    <title>Tooltip</title>
+    <title>Histogramm</title>
   </head>
   <body>
     <div class="page page_inner">
@@ -114,14 +114,12 @@
           <div class="basic__container">
             <div class="menu">
               <h4 class="menu__title">Components</h4>
-              <div class="menu__item_active">Tooltip</div>
+              <a class="menu__item" href="01-template-tooltip.html">Tooltip</a>
               <a class="menu__item" href="02-template-calendar.html"
                 >Calendar</a
               >
               <a class="menu__item" href="03-template-modal.html">Modal</a>
-              <a class="menu__item" href="04-template-histogramm.html"
-                >Histogramm</a
-              >
+              <div class="menu__item menu__item_active">Histogramm</div>
               <a class="menu__item" href="05-template-avatar.html">Avatar</a>
               <a class="menu__item" href="06-template-accordion.html"
                 >Accordion</a
@@ -137,17 +135,46 @@
               <a class="menu__item" href="../index.html">Main page</a>
             </div>
             <div class="component-view">
-              <h3 class="component-view__title">Tooltip</h3>
+              <h3 class="component-view__title">Histogramm</h3>
               <div class="component-view__component-card">
-                <div class="tooltip">
-                  <div class="tooltip__trigger">
-                    <svg class="tooltip__icon-help">
-                      <use
-                        xlink:href="../assets/images/icons-sprite.svg#help"
-                      ></use>
-                    </svg>
+                <div class="histogramm">
+                  <div class="histogramm__header">
+                    <p class="histogramm__title">Total orders</p>
+                    <p class="histogramm__link">View all</p>
                   </div>
-                  <div class="tooltip__bubble">Helper text</div>
+                  <h4 class="histogramm__statistic">50254</h4>
+                  <div class="histogramm__chart">
+                    <div
+                      class="histogramm__chart-el histogramm__chart-el_1"
+                    ></div>
+                    <div
+                      class="histogramm__chart-el histogramm__chart-el_2"
+                    ></div>
+                    <div
+                      class="histogramm__chart-el histogramm__chart-el_3"
+                    ></div>
+                    <div
+                      class="histogramm__chart-el histogramm__chart-el_4"
+                    ></div>
+                    <div
+                      class="histogramm__chart-el histogramm__chart-el_5"
+                    ></div>
+                    <div
+                      class="histogramm__chart-el histogramm__chart-el_6"
+                    ></div>
+                    <div
+                      class="histogramm__chart-el histogramm__chart-el_7"
+                    ></div>
+                    <div
+                      class="histogramm__chart-el histogramm__chart-el_8"
+                    ></div>
+                    <div
+                      class="histogramm__chart-el histogramm__chart-el_9"
+                    ></div>
+                    <div
+                      class="histogramm__chart-el histogramm__chart-el_10"
+                    ></div>
+                  </div>
                 </div>
               </div>
 
@@ -186,68 +213,143 @@
                   </div>
 
                   <div class="tabs__section_preview tabs__section_preview-html">
-                    <pre><code class="tabs__code">&lt;div class=&quot;tooltip&quot;&gt;
-                      &lt;div class=&quot;tooltip__trigger&quot;&gt;
-                        &lt;svg class=&quot;tooltip__icon-help&quot;&gt;
-                          &lt;use xlink:href=&quot;../../assets/images/icons-sprite.svg#help&quot;&gt;&lt;/use&gt;
-                        &lt;/svg&gt;
-                      &lt;/div&gt;
-                      &lt;div class=&quot;tooltip__bubble&quot;&gt;Helper text&lt;/div&gt;
-                    &lt;/div&gt;</code></pre>
+                    <pre><code class="tabs__code">&lt;div class=&quot;histogramm&quot;&gt;
+                    &lt;div class=&quot;histogramm__header&quot;&gt;
+                      &lt;p class=&quot;histogramm__title&quot;&gt;Total orders&lt;/p&gt;
+                      &lt;p class=&quot;histogramm__link&quot;&gt;View all&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;h4 class=&quot;histogramm__statistic&quot;&gt;50254&lt;/h4&gt;
+                    &lt;div class=&quot;histogramm__chart&quot;&gt;
+                      &lt;div
+                        class=&quot;histogramm__chart-el histogramm__chart-el_1&quot;
+                      &gt;&lt;/div&gt;
+                      &lt;div
+                        class=&quot;histogramm__chart-el histogramm__chart-el_2&quot;
+                      &gt;&lt;/div&gt;
+                      &lt;div
+                        class=&quot;histogramm__chart-el histogramm__chart-el_3&quot;
+                      &gt;&lt;/div&gt;
+                      &lt;div
+                        class=&quot;histogramm__chart-el histogramm__chart-el_4&quot;
+                      &gt;&lt;/div&gt;
+                      &lt;div
+                        class=&quot;histogramm__chart-el histogramm__chart-el_5&quot;
+                      &gt;&lt;/div&gt;
+                      &lt;div
+                        class=&quot;histogramm__chart-el histogramm__chart-el_6&quot;
+                      &gt;&lt;/div&gt;
+                      &lt;div
+                        class=&quot;histogramm__chart-el histogramm__chart-el_7&quot;
+                      &gt;&lt;/div&gt;
+                      &lt;div
+                        class=&quot;histogramm__chart-el histogramm__chart-el_8&quot;
+                      &gt;&lt;/div&gt;
+                      &lt;div
+                        class=&quot;histogramm__chart-el histogramm__chart-el_9&quot;
+                      &gt;&lt;/div&gt;
+                      &lt;div
+                        class=&quot;histogramm__chart-el histogramm__chart-el_10&quot;
+                      &gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;</code></pre>
                   </div>
 
                   <div class="tabs__section_preview tabs__section_preview-css">
-                    <pre><code class="tabs__code">.tooltip {
-                      display: inline-block;
-                      position: relative;
+                    <pre><code class="tabs__code">.histogramm {
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    padding: 16px 24px 24px;
+                    border: 1px solid var(--border-color);
+                    border-radius: 8px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                  }
+                  
+                  .histogramm__header {
+                    flex-basis: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                  }
+                  
+                  .histogramm__title {
+                    font-size: 16px;
+                    color: var(--font-active);
+                  }
+                  
+                  .histogramm__link {
+                    font-size: 16px;
+                    color: var(--secondary);
+                  }
+                  
+                  .histogramm__statistic {
+                    font-size: 20px;
+                    color: var(--font-active);
+                  }
+                  
+                  .histogramm__chart {
+                    height: 50px;
+                    align-self: flex-end;
+                    flex-basis: 100%;
+                    display: flex;
+                    align-items: flex-end;
+                  }
+                  
+                  .histogramm__chart-el {
+                    background-color: var(--secondary);
+                    margin-left: 1px;
+                    flex-grow: 1;
+                    animation: rising 1.5s ease-in-out reverse 1;
+                  }
+                  
+                  .histogramm__chart-el_1 {
+                    height: 10%;
+                  }
+                  
+                  .histogramm__chart-el_2 {
+                    height: 20%;
+                  }
+                  
+                  .histogramm__chart-el_3 {
+                    height: 30%;
+                  }
+                  
+                  .histogramm__chart-el_4 {
+                    height: 40%;
+                  }
+                  
+                  .histogramm__chart-el_5 {
+                    height: 50%;
+                  }
+                  
+                  .histogramm__chart-el_6 {
+                    height: 60%;
+                  }
+                  
+                  .histogramm__chart-el_7 {
+                    height: 70%;
+                  }
+                  
+                  .histogramm__chart-el_8 {
+                    height: 80%;
+                  }
+                  
+                  .histogramm__chart-el_9 {
+                    height: 90%;
+                  }
+                  
+                  .histogramm__chart-el_10 {
+                    height: 100%;
+                  }
+                  
+                  @keyframes rising {
+                    to {
+                      height: 0;
                     }
-                    
-                    .tooltip__trigger {
-                      cursor: pointer;
-                    }
-                    
-                    .tooltip__bubble {
-                      font-family: 'Inter';
-                      font-style: normal;
-                      font-weight: 400;
-                      font-size: 16px;
-                      line-height: 24px;
-                      text-align: center;
-                      color: #dde2e5;
-                      border-radius: 10px;
-                      padding: 13px 21px 8px;
-                      background: var(--primary);
-                      display: none;
-                      white-space: nowrap;
-                      position: absolute;
-                      left: 50%;
-                      bottom: calc(100% + 8px);
-                      transform: translateX(-50%);
-                    }
-                    
-                    .tooltip__bubble:before {
-                      content: '';
-                      border: 10px solid transparent;
-                      border-top-color: var(--primary);
-                      position: absolute;
-                      top: 100%;
-                      left: 50%;
-                      transform: translateX(-50%);
-                    }
-                    
-                    .tooltip__trigger:hover ~ .tooltip__bubble {
-                      display: block;
-                    }
-                    
-                    .tooltip__icon-help {
-                      width: 22px;
-                      height: 22px;
-                      fill: var(--primary);
-                    }
-                    
-                    .tooltip_preview {
-                      display: block;
-                    }</code></pre>
+                  }
+                  </code></pre>
                   </div>
                 </div>
               </div>

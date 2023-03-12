@@ -1,13 +1,13 @@
 .mobile-menu {
   position: fixed;
-  background: #f9fafc;
+  background: var(--main-background);
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   transform: translateX(-100vw);
   transition: transform 250ms linear;
-  display: none;
+  z-index: 1;
 }
 
 .mobile-menu[data-open] {
@@ -22,8 +22,26 @@
   left: 0;
 }
 
-@media (max-width: 767px) {
-  .mobile-menu {
-    display: block;
+.mobile-menu__button {
+  width: 26px;
+  height: 26px;
+  padding: 2px;
+  border: none;
+  background-color: var(--main-background);
+  position: absolute;
+}
+
+.mobile-menu__button_open {
+  left: 0;
+}
+
+.mobile-menu__button_close {
+  left: 3.5%;
+  top: 4%;
+}
+
+@media (min-width: 768px) {
+  .mobile-menu__button {
+    display: none;
   }
 }

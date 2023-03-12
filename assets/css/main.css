@@ -25,6 +25,7 @@
 @import '../../components/container/forms.css';
 @import '../../10-lection8/theme-changer.css';
 @import '../../09-lection7/01-burger-menu/burger-menu.css';
+@import '../../07-lection5/04-input/input.css';
 
 :root {
   --white: #ffffff; /*объявляю декаларативные переменные*/

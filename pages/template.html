@@ -4,7 +4,8 @@
   <head>
     <meta charset="uff-8" />
     <link rel="stylesheet" href="../assets/css/main.css" />
-    <meta name="viewport" content="width=device-width" initial scale="1" />
+    <meta name="viewport" content="width=device-width" initial-scale="1.0" />
+
     <title>Template</title>
   </head>
   <body>
@@ -12,6 +13,52 @@
       <header class="header header_transparent">
         <div class="container">
           <div class="header__inner">
+            <button
+              class="button mobile-menu__button mobile-menu__button_open"
+              id="burger-menu-open"
+            >
+              <!--так можно миксовать кнопку?-->
+              <svg class="mobile-menu__icon">
+                <use href="../../assets/images/icons-sprite.svg#menu"></use>
+              </svg>
+            </button>
+            <div class="mobile-menu" id="burger-menu">
+              <button
+                class="button mobile-menu__button mobile-menu__button_close"
+                id="burger-menu-close"
+              >
+                <svg class="mobile-menu__icon">
+                  <use href="../../assets/images/icons-sprite.svg#cross"></use>
+                </svg>
+              </button>
+
+              <div class="menu menu_mobile">
+                <h4 class="menu__title">Components</h4>
+                <a class="menu__item" href="01-template-tooltip.html"
+                  >Tooltip</a
+                >
+                <a class="menu__item" href="02-template-calendar.html"
+                  >Calendar</a
+                >
+                <a class="menu__item" href="03-template-modal.html">Modal</a>
+                <a class="menu__item" href="04-template-histogramm.html"
+                  >Histogramm</a
+                >
+                <a class="menu__item" href="05-template-avatar.html">Avatar</a>
+                <a class="menu__item" href="06-template-accordion.html"
+                  >Accordion</a
+                >
+                <a class="menu__item" href="07-template-forms.html"
+                  >Custom form elements</a
+                >
+                <a class="menu__item" href="08-template-button.html">Button</a>
+                <a class="menu__item" href="09-template-sceleton.html"
+                  >Sceleton</a
+                >
+
+                <a class="menu__item" href="../index.html">Main page</a>
+              </div>
+            </div>
             <svg
               class="header__logo_transparent"
               width="110"
@@ -31,6 +78,34 @@
                 </clipPath>
               </defs>
             </svg>
+            <div class="theme-changer">
+              <svg class="theme-changer__icon">
+                <use href="../assets/images/icons-sprite.svg#sun"></use>
+              </svg>
+              <label class="toggler">
+                <input
+                  type="checkbox"
+                  id="theme-changer"
+                  class="toggler__input"
+                />
+                <div class="toggler__state">
+                  <div class="toggler__control">
+                    <svg
+                      class="toggler__icon"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect width="24" height="24" rx="12" />
+                    </svg>
+                  </div>
+                </div>
+              </label>
+              <svg class="theme-changer__icon">
+                <use href="../assets/images/icons-sprite.svg#moon"></use>
+              </svg>
+            </div>
           </div>
         </div>
       </header>
@@ -39,25 +114,25 @@
           <div class="basic__container">
             <div class="menu">
               <h4 class="menu__title">Components</h4>
-              <div class="menu__item_active">Tooltip</div>
-              <div class="menu__item">Calendar</div>
-              <div class="menu__item">Modal</div>
-              <div class="menu__item">Histogramm</div>
-              <div class="menu__item">Avatar</div>
-              <div class="menu__item">Accordion</div>
-              <div class="menu__item">Custom form elements</div>
-              <div class="menu__item">Button</div>
-              <div class="menu__item">Sceleton</div>
+              <div class="menu__item">Tooltip</div>
+              <a class="menu__item" href=".">Calendar</a>
+              <a class="menu__item" href=".">Modal</a>
+              <a class="menu__item" href=".">Histogramm</a>
+              <a class="menu__item" href=".">Avatar</a>
+              <a class="menu__item" href=".">Accordion</a>
+              <a class="menu__item" href=".">Custom form elements</a>
+              <a class="menu__item" href=".">Button</a>
+              <a class="menu__item" href=".">Sceleton</a>
 
-              <a class="menu__link">Main page</a>
+              <a class="menu__item" href=".">Main page</a>
             </div>
             <div class="component-view">
               <h3 class="component-view__title">Tooltip</h3>
-              <div class="component-view__component-card">lala</div>
+              <div class="component-view__component-card"></div>
 
               <div class="component-view__component-code">
-                <div class="tabs__wrap_preview">
-                  <div class="tabs__wrap_state">
+                <div class="tabs_preview">
+                  <div class="tabs__layout_preview">
                     <div class="tabs__state">
                       <input
                         class="tabs__input tabs__input_html"
@@ -79,23 +154,23 @@
                       <label class="tabs__label" for="#css-tab">CSS</label>
                       <div class="tabs__slider"></div>
                     </div>
+                    <svg
+                      class="tabs__divider"
+                      viewBox="0 0 825 1"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect width="825" height="1" fill="#DDE2E5" />
+                    </svg>
                   </div>
 
-                  <svg
-                    class="component-view__divider"
-                    viewBox="0 0 825 1"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <rect width="825" height="1" fill="#DDE2E5" />
-                  </svg>
+                  <div
+                    class="tabs__section_preview tabs__section_preview-html"
+                  ></div>
 
-                  <div class="tabs__content_preview tabs__content_preview-html">
-                    здесь html
-                  </div>
-                  <div class="tabs__content_preview tabs__content_preview-css">
-                    а здесь css
-                  </div>
+                  <div
+                    class="tabs__section_preview tabs__section_preview-css"
+                  ></div>
                 </div>
               </div>
             </div>
@@ -107,4 +182,6 @@
       </footer>
     </div>
   </body>
+  <script defer src="../10-lection8/01-theme-changer/theme-changer.js"></script>
+  <script defer src="../09-lection7/01-burger-menu/burger-menu.js"></script>
 </html>

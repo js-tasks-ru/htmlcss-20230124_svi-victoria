@@ -2,7 +2,7 @@
   background: var(--main-background);
   box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
   border-radius: 12px;
-  padding-top: 32px;
+
   padding-left: 48px;
 
   display: flex;
@@ -19,10 +19,44 @@
   padding-bottom: 24px;
 }
 
+.component-view__component-name {
+  color: var(--font-muted);
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+}
+
 .component-view__component-card {
-  /*margin: 70px;*/
-  height: fit-content;
+  margin: 64px 47px;
   position: relative;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.component-view__expander {
+  width: 100%;
+}
+
+.component-view__plasing-six-sections {
+  gap: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.component-view__plasing_row-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.component-view__plasing_column-sections {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
 }
 
 .component-view__component-code {
@@ -31,9 +65,26 @@
 
 @media (max-width: 767px) {
   .component-view__title {
-    .component-view__title {
-      font-size: 20px;
-      line-height: 26px;
-    }
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+@media (max-width: 767px) {
+  .component-view {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .component-view__plasing-six-sections {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 767px) {
+  .component-view__plasing_column-sections {
+    flex-direction: column;
+    gap: 20px;
   }
 }

@@ -35,8 +35,8 @@
 
 .menu_mobile {
   position: absolute;
-  left: 3.5%;
-  top: 7%;
+  left: 15px;
+  top: 45px;
 }
 
 @media (max-width: 767px) {

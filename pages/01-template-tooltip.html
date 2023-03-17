@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../assets/css/main.css" />
     <meta name="viewport" content="width=device-width" initial-scale="1.0" />
 
-    <title>Template</title>
+    <title>Tooltip</title>
   </head>
   <body>
     <div class="page page_inner">
@@ -19,7 +19,10 @@
               </svg>
             </button>
             <div class="mobile-menu" id="burger-menu">
-              <button class="button mobile-menu__button" id="burger-menu-close">
+              <button
+                class="button mobile-menu__button mobile-menu__button_close"
+                id="burger-menu-close"
+              >
                 <svg class="mobile-menu__icon">
                   <use href="../../assets/images/icons-sprite.svg#cross"></use>
                 </svg>
@@ -107,21 +110,42 @@
           <div class="basic__container">
             <div class="menu">
               <h4 class="menu__title">Components</h4>
-              <div class="menu__item">Tooltip</div>
-              <a class="menu__item" href=".">Calendar</a>
-              <a class="menu__item" href=".">Modal</a>
-              <a class="menu__item" href=".">Histogramm</a>
-              <a class="menu__item" href=".">Avatar</a>
-              <a class="menu__item" href=".">Accordion</a>
-              <a class="menu__item" href=".">Custom form elements</a>
-              <a class="menu__item" href=".">Button</a>
-              <a class="menu__item" href=".">Sceleton</a>
+              <div class="menu__item_active">Tooltip</div>
+              <a class="menu__item" href="02-template-calendar.html"
+                >Calendar</a
+              >
+              <a class="menu__item" href="03-template-modal.html">Modal</a>
+              <a class="menu__item" href="04-template-histogramm.html"
+                >Histogramm</a
+              >
+              <a class="menu__item" href="05-template-avatar.html">Avatar</a>
+              <a class="menu__item" href="06-template-accordion.html"
+                >Accordion</a
+              >
+              <a class="menu__item" href="07-template-forms.html"
+                >Custom form elements</a
+              >
+              <a class="menu__item" href="08-template-button.html">Button</a>
+              <a class="menu__item" href="09-template-sceleton.html"
+                >Sceleton</a
+              >
 
-              <a class="menu__item" href=".">Main page</a>
+              <a class="menu__item" href="../index.html">Main page</a>
             </div>
             <div class="component-view">
               <h3 class="component-view__title">Tooltip</h3>
-              <div class="component-view__component-card"></div>
+              <div class="component-view__component-card">
+                <div class="tooltip">
+                  <div class="tooltip__trigger">
+                    <svg class="tooltip__icon-help">
+                      <use
+                        xlink:href="../assets/images/icons-sprite.svg#help"
+                      ></use>
+                    </svg>
+                  </div>
+                  <div class="tooltip__bubble">Helper text</div>
+                </div>
+              </div>
 
               <div class="component-view__component-code">
                 <div class="tabs_preview">
@@ -149,13 +173,70 @@
                     </div>
                   </div>
 
-                  <div
-                    class="tabs__section_preview tabs__section_preview-html"
-                  ></div>
+                  <div class="tabs_preview tabs__section tabs__section_html">
+                    <pre><code class="tabs__code">&lt;div class=&quot;tooltip&quot;&gt;
+                      &lt;div class=&quot;tooltip__trigger&quot;&gt;
+                        &lt;svg class=&quot;tooltip__icon-help&quot;&gt;
+                          &lt;use xlink:href=&quot;../../assets/images/icons-sprite.svg#help&quot;&gt;&lt;/use&gt;
+                        &lt;/svg&gt;
+                      &lt;/div&gt;
+                      &lt;div class=&quot;tooltip__bubble&quot;&gt;Helper text&lt;/div&gt;
+                    &lt;/div&gt;</code></pre>
+                  </div>
 
-                  <div
-                    class="tabs__section_preview tabs__section_preview-css"
-                  ></div>
+                  <div class="tabs_preview tabs__section tabs__section_css">
+                    <pre><code class="tabs__code">.tooltip {
+                      display: inline-block;
+                      position: relative;
+                    }
+                    
+                    .tooltip__trigger {
+                      cursor: pointer;
+                    }
+                    
+                    .tooltip__bubble {
+                      font-family: 'Inter';
+                      font-style: normal;
+                      font-weight: 400;
+                      font-size: 16px;
+                      line-height: 24px;
+                      text-align: center;
+                      color: #dde2e5;
+                      border-radius: 10px;
+                      padding: 13px 21px 8px;
+                      background: var(--primary);
+                      display: none;
+                      white-space: nowrap;
+                      position: absolute;
+                      left: 50%;
+                      bottom: calc(100% + 8px);
+                      transform: translateX(-50%);
+                    }
+                    
+                    .tooltip__bubble:before {
+                      content: '';
+                      border: 10px solid transparent;
+                      border-top-color: var(--primary);
+                      position: absolute;
+                      top: 100%;
+                      left: 50%;
+                      transform: translateX(-50%);
+                    }
+                    
+                    .tooltip__trigger:hover ~ .tooltip__bubble {
+                      display: block;
+                    }
+                    
+                    .tooltip__icon-help {
+                      width: 22px;
+                      height: 22px;
+                      fill: var(--primary);
+                    }
+                    
+                    .tooltip_preview {
+                      display: block;
+                    }</code></pre>
+                  </div>
                 </div>
               </div>
             </div>

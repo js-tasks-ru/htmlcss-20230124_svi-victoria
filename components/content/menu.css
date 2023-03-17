@@ -1,7 +1,8 @@
 .menu {
   display: grid;
-  grid-template-rows: 42px repeat(6, 22px) 52px 1fr;
+  grid-template-rows: 42px repeat(9, 22px) 52px 1fr;
   align-items: center;
+  width: 100%;
 }
 
 .menu__title {
@@ -20,6 +21,7 @@
   font-size: 14px;
   line-height: 22px;
   color: var(--font-active);
+  text-decoration: none;
 }
 
 .menu__item_active {
@@ -31,8 +33,21 @@
   color: var(--red);
 }
 
+.menu_mobile {
+  position: absolute;
+  left: 15px;
+  top: 45px;
+}
+
 @media (max-width: 767px) {
   .menu {
     display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .menu_mobile {
+    display: grid;
+    padding-top: 30px;
   }
 }

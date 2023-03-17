@@ -1,29 +1,39 @@
 <!DOCTYPE html>
 <!-- Страница бургер-меню -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./burger-menu.css">
-        <meta charset="uff-8">
-        <title>Burger-menu</title>
-        <script defer src="./burger-menu.js"></script>
-    </head>
-    <body>
-        <button class="button button_primary" id="burger-menu-open">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3 12H21" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M3 6H21" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M3 18H21" stroke="#495057" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-        </button>
-        <div class="mobile-menu" id="burger-menu">
-            <button class="mobile-menu__close" id="burger-menu-close">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M18 6L6 18" stroke="#212429" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M6 6L18 18" stroke="#212429" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>                                     
-            </button>
+  <head>
+    <link rel="stylesheet" href="../../assets/css/main.css" />
 
-        </div>
-    </body>
+    <meta charset="uff-8" />
+    <title>Burger-menu</title>
+  </head>
+  <body>
+    <button class="button header__button" id="burger-menu-open">
+      <svg class="header__icon">
+        <use href="../../assets/images/icons-sprite.svg#menu"></use>
+      </svg>
+    </button>
+    <div class="mobile-menu" id="burger-menu">
+      <button class="button mobile-menu__button" id="burger-menu-close">
+        <svg class="mobile-menu__icon">
+          <use href="../../assets/images/icons-sprite.svg#cross"></use>
+        </svg>
+      </button>
+      <div class="menu menu_mobile">
+        <h4 class="menu__title">Components</h4>
+        <a class="menu__item" href=".">Tooltip</a>
+        <a class="menu__item" href=".">Calendar</a>
+        <a class="menu__item" href=".">Modal</a>
+        <a class="menu__item" href=".">Histogramm</a>
+        <a class="menu__item" href=".">Avatar</a>
+        <a class="menu__item" href=".">Accordion</a>
+        <a class="menu__item" href=".">Custom form elements</a>
+        <a class="menu__item" href=".">Button</a>
+        <a class="menu__item" href=".">Sceleton</a>
+
+        <a class="menu__item" href=".">Main page</a>
+      </div>
+    </div>
+  </body>
+  <script defer src="./burger-menu.js"></script>
 </html>

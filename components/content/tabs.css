@@ -40,6 +40,7 @@
   line-height: 24px;
   color: var(--font-active);
   padding-bottom: 8px;
+  white-space: nowrap;
 }
 
 .tabs__slider {
@@ -50,6 +51,27 @@
   transform: scaleX(0);
 }
 
+.tabs__section {
+  padding-top: 68px;
+  gap: 30px;
+  flex-wrap: wrap;
+  display: none;
+}
+
+.tabs__section_preview {
+  display: none;
+  padding-top: 50px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.tabs__code {
+  white-space: pre-wrap;
+  text-overflow: clip;
+}
+
 .tabs__input:hover ~ .tabs__slider {
   transform: scaleX(1);
   transition: transform 250ms ease-in-out;
@@ -58,14 +80,6 @@
 .tabs__input:checked ~ .tabs__slider {
   transform: scaleX(1);
   transition: transform 250ms ease-in-out;
-}
-
-.tabs__section {
-  padding-top: 68px;
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
-  display: none;
 }
 
 .tabs:has(.tabs__input_all:checked) .tabs__section_all {
@@ -84,6 +98,31 @@
   display: flex;
 }
 
+.tabs_preview {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  padding: 64px 0 0px;
+}
+
+.tabs__layout {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  position: relative;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 5px;
+}
+
+.tabs_preview:has(.tabs__input_html:checked) .tabs__section_html {
+  display: block;
+}
+.tabs_preview:has(.tabs__input_css:checked) .tabs__section_css {
+  display: block;
+}
+
 @media (max-width: 767px) {
   .tabs__section {
     flex-direction: column;
@@ -94,5 +133,11 @@
   .tabs__wrapper {
     background: var(--main-background);
     overflow-x: scroll;
+  }
+}
+
+@media (max-width: 767px) {
+  .tabs__section {
+    overflow: scroll;
   }
 }

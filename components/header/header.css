@@ -21,6 +21,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .header__logo {
@@ -45,5 +46,30 @@
     font-size: 28px;
     line-height: 38px;
     color: var(--font-card-type);
+  }
+}
+
+.header__button {
+  width: 26px;
+  height: 26px;
+  padding: 2px !important; /*добавила important т.к. применяются в первую очередь стили button, а не header__menu-button (разные паддинги).*/
+  border: none;
+  background-color: var(--main-background);
+  position: absolute;
+  left: 0;
+}
+
+.header__icon {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: var(--font-active);
+}
+
+@media (min-width: 768px) {
+  .header__button {
+    display: none;
   }
 }

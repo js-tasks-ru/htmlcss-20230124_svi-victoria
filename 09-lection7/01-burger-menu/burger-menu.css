@@ -20,6 +20,7 @@
   position: absolute;
   top: 0;
   left: 0;
+  fill: var(--font-active);
 }
 
 .mobile-menu__button {
@@ -29,19 +30,6 @@
   border: none;
   background-color: var(--main-background);
   position: absolute;
-}
-
-.mobile-menu__button_open {
-  left: 0;
-}
-
-.mobile-menu__button_close {
   left: 15px;
   top: 25px;
-}
-
-@media (min-width: 768px) {
-  .mobile-menu__button {
-    display: none;
-  }
 }

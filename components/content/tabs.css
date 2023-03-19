@@ -53,18 +53,19 @@
 
 .tabs__section {
   padding-top: 68px;
+  padding-bottom: 20px;
   gap: 30px;
   flex-wrap: wrap;
   display: none;
 }
 
-.tabs__section_preview {
-  display: none;
-  padding-top: 50px;
-  font-family: Inter;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
+.tabs_preview {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  padding: 64px 0 0px;
 }
 
 .tabs__code {
@@ -96,15 +97,6 @@
 
 .tabs:has(.tabs__input_organisms:checked) .tabs__section_organisms {
   display: flex;
-}
-
-.tabs_preview {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: flex-start;
-
-  padding: 64px 0 0px;
 }
 
 .tabs__layout {

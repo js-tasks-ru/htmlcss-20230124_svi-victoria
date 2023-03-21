@@ -20,7 +20,7 @@
 .radio__control {
   box-sizing: border-box;
   background: var(--main-background);
-  border: 2px solid var(--border-color);
+  border: 1px solid var(--disableed);
   border-radius: 14px;
   width: 28px;
   height: 28px;
@@ -51,11 +51,12 @@
 }
 
 .radio__input:disabled ~ .radio__state .radio__control {
-  background: var(--font-muted);
+  background: var(--disableed);
+  border: 1px solid var(--disableed);
 }
 
 .radio__input:disabled ~ .radio__state .radio__title {
-  color: var(--font-muted);
+  color: var(--disableed);
 }
 
 .radio__input:disabled ~ .radio__state {

@@ -34,7 +34,7 @@
   --black: #212429;
   --pink: #f784ad;
   --purple: #7048e8;
-  --blue: #374fc7;
+  --blue: #4263eb;
   --red: #f03d3e;
   --grey-1: #f8f9fa;
   --grey-2: #dde2e5;
@@ -42,8 +42,8 @@
   --grey-4: #495057;
 
   --main-background: var(--white-3); /*объявляю семантические переменные*/
-  --header-background: var(--white-2);
-  --footer-background: var(--white-2);
+  --header-background: var(--white-3);
+  --footer-background: var(--white-3);
   --font-active: var(--black);
   --font-muted: var(--grey-3);
   --font-card-type: var(--grey-4);
@@ -54,6 +54,7 @@
   --secondary: var(--purple);
   --success: var(--blue);
   --error: var(--red);
+  --disableed: var(--grey-2);
 }
 
 html[data-theme-dark] {
@@ -70,6 +71,7 @@ html[data-theme-dark] {
   --secondary: var(--purple);
   --success: var(--blue);
   --error: var(--red);
+  --disableed: var(--grey-1);
 }
 
 body {

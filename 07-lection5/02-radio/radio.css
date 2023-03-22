@@ -4,6 +4,10 @@
   vertical-align: top;
 }
 
+.radio_preview .radio__title {
+  font-size: 14px;
+}
+
 .radio__input {
   position: absolute;
   outline: none;

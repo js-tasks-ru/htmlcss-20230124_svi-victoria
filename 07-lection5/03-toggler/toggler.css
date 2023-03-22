@@ -3,6 +3,10 @@
   position: relative;
 }
 
+.toggler_preview .toggler__title {
+  font-size: 14px;
+}
+
 .toggler__input {
   position: absolute;
   outline: none;

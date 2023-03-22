@@ -10,6 +10,10 @@
   justify-content: space-between;
 }
 
+.histogramm_expand {
+  min-width: 300px;
+}
+
 .histogramm__header {
   flex-basis: 100%;
   display: flex;

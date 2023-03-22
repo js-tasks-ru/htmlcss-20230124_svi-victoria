@@ -58,6 +58,14 @@
   animation: gradient 2s ease forwards infinite;
 }
 
+.skeleton_preview .skeleton__circle {
+  animation: none;
+}
+
+.skeleton_preview .skeleton__line {
+  animation: none;
+}
+
 @keyframes gradient {
   from {
     background-position: 100%;

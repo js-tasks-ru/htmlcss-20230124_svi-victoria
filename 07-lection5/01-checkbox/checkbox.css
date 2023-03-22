@@ -4,6 +4,10 @@
   vertical-align: top;
 }
 
+.checkbox_preview .checkbox__title {
+  font-size: 14px;
+}
+
 .checkbox__input {
   position: absolute;
   outline: none;

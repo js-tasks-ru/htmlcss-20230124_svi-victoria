@@ -33,12 +33,6 @@
   color: var(--red);
 }
 
-.menu_mobile {
-  position: absolute;
-  left: 15px;
-  top: 45px;
-}
-
 @media (max-width: 767px) {
   .menu {
     display: none;
@@ -48,6 +42,5 @@
 @media (max-width: 767px) {
   .menu_mobile {
     display: grid;
-    padding-top: 30px;
   }
 }

@@ -1,6 +1,6 @@
 .tabs {
   max-width: 100%;
-  background-color: var(--main-background);
+  background-color: var(--preview-background);
   border-bottom: 1px solid var(--border-color);
   padding: 0px 0px 204px;
   flex-grow: 1;
@@ -8,7 +8,7 @@
 
 .tabs__wrapper {
   background: var(--header-background);
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--disableed);
 }
 
 .tabs__menu {
@@ -38,7 +38,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: var(--font-active);
+  color: var(--font-muted);
   padding-bottom: 8px;
   white-space: nowrap;
 }
@@ -64,8 +64,6 @@
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: flex-start;
-
-  padding: 64px 0 0px;
 }
 
 .tabs__code {
@@ -78,9 +76,17 @@
   transition: transform 250ms ease-in-out;
 }
 
+.tabs__input:hover ~ .tabs__label {
+  color: var(--font-active);
+}
+
 .tabs__input:checked ~ .tabs__slider {
   transform: scaleX(1);
   transition: transform 250ms ease-in-out;
+}
+
+.tabs__input:checked ~ .tabs__label {
+  color: var(--font-active);
 }
 
 .tabs:has(.tabs__input_all:checked) .tabs__section_all {
@@ -104,7 +110,7 @@
   flex-direction: row;
   gap: 40px;
   position: relative;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--disableed);
   padding-bottom: 5px;
 }
 
@@ -118,6 +124,8 @@
 @media (max-width: 767px) {
   .tabs__section {
     flex-direction: column;
+    margin-left: 16px;
+    overflow: scroll;
   }
 }
 
@@ -129,7 +137,7 @@
 }
 
 @media (max-width: 767px) {
-  .tabs__section {
-    overflow: scroll;
+  .tabs__layout {
+    margin-left: 16px;
   }
 }

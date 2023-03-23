@@ -14,6 +14,7 @@
 
 .header_transparent {
   padding: 24px 0;
+  background: var(--preview-background);
 }
 
 .header__inner {
@@ -52,7 +53,7 @@
 .header__button {
   width: 26px;
   height: 26px;
-  padding: 2px !important; /*добавила important т.к. применяются в первую очередь стили button, а не header__menu-button (разные паддинги).*/
+  padding: 2px !important;
   border: none;
   background-color: var(--main-background);
   position: absolute;
@@ -68,7 +69,7 @@
   fill: var(--font-active);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .header__button {
     display: none;
   }

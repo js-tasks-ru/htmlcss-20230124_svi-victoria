@@ -37,6 +37,7 @@
   width: 16px;
   height: 8px;
   align-self: center;
+  fill: var(--font-active);
 }
 
 .accordion__item[open] .accordion__icon-daw {

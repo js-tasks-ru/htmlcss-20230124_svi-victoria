@@ -17,17 +17,8 @@
   line-height: 38px;
   color: var(--font-card-type);
   padding-bottom: 24px;
+  padding-top: 32px;
 }
-
-/*.component-view__component-name {
-  color: var(--font-muted);
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 18px;
-  letter-spacing: 0.04em;
-}*/
 
 .component-view__component-card {
   margin: 32px 47px;

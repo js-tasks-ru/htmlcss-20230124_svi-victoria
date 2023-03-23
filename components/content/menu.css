@@ -1,8 +1,10 @@
 .menu {
   display: grid;
   grid-template-rows: 42px repeat(9, 22px) 52px 1fr;
+  gap: 4px;
   align-items: center;
   width: 100%;
+  background: var(--preview-background);
 }
 
 .menu__title {
@@ -42,5 +44,6 @@
 @media (max-width: 767px) {
   .menu_mobile {
     display: grid;
+    gap: 16px;
   }
 }

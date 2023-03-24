@@ -34,10 +34,8 @@
 }
 
 .mobile-menu__header {
-  padding-bottom: 18px;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  border-bottom: 1px solid var(--disableed);
 }

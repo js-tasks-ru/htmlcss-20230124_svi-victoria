@@ -69,6 +69,10 @@
   fill: var(--font-active);
 }
 
+.mobile-menu .header_transparent {
+  border-bottom: 1px solid var(--disableed);
+}
+
 @media (min-width: 767px) {
   .header__button {
     display: none;

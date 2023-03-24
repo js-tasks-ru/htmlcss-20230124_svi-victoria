@@ -1,8 +1,10 @@
 .menu {
   display: grid;
   grid-template-rows: 42px repeat(9, 22px) 52px 1fr;
+  gap: 4px;
   align-items: center;
   width: 100%;
+  background: var(--preview-background);
 }
 
 .menu__title {
@@ -33,12 +35,6 @@
   color: var(--red);
 }
 
-.menu_mobile {
-  position: absolute;
-  left: 15px;
-  top: 45px;
-}
-
 @media (max-width: 767px) {
   .menu {
     display: none;
@@ -48,6 +44,13 @@
 @media (max-width: 767px) {
   .menu_mobile {
     display: grid;
-    padding-top: 30px;
+    gap: 16px;
+    position: absolute;
+    left: 16px;
+    padding-top: 18px;
   }
+}
+
+.menu_mobile .menu__title {
+  color: var(--font-muted);
 }

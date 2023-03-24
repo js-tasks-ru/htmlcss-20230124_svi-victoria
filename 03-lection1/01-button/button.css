@@ -6,16 +6,19 @@
   line-height: 19px;
   text-align: center;
   border-radius: 8px;
+  border: none;
   padding: 15px 60px 14px;
   transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 }
 
 .button_preview {
-  padding: 15px;
+  padding: 10px;
+  font-size: 13px;
 }
 
 .button_primary {
   background-color: var(--primary);
+
   color: var(--main-background);
 }
 

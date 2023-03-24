@@ -26,10 +26,16 @@
 .mobile-menu__button {
   width: 26px;
   height: 26px;
-  padding: 2px;
+  padding: 2px !important;
   border: none;
   background-color: var(--main-background);
   position: absolute;
-  left: 15px;
-  top: 25px;
+  left: 16px;
+}
+
+.mobile-menu__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }

@@ -12,10 +12,10 @@
 .card__layout {
   flex-grow: 1;
   display: grid;
-  grid-template-rows: auto 31px 57px;
+  grid-template-rows: 1fr 31px 51px;
   justify-items: center;
   align-items: center;
-  padding: 10px 12px;
+  padding: 32px 32px 0px 32px;
 }
 
 .card__inner {
@@ -49,11 +49,14 @@
   font-size: 21px;
   line-height: 25px;
   color: var(--font-active);
+  align-self: baseline;
 }
 
 .card__type {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  align-self: flex-start;
+  margin-bottom: 32px;
+  padding-top: 0px;
+  align-self: baseline;
 }

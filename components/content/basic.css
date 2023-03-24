@@ -1,8 +1,5 @@
 .basic {
-  background-color: var(--main-background);
-  border-top: 1px solid var(--border-color);
-  border-bottom: 1px solid var(--border-color);
-  padding: 67px 0px 0px;
+  background-color: var(--preview-background);
 }
 
 .basic__container {

@@ -17,20 +17,11 @@
   line-height: 38px;
   color: var(--font-card-type);
   padding-bottom: 24px;
-}
-
-.component-view__component-name {
-  color: var(--font-muted);
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 18px;
-  letter-spacing: 0.04em;
+  padding-top: 32px;
 }
 
 .component-view__component-card {
-  margin: 64px 47px;
+  margin: 32px 47px;
   position: relative;
   display: flex;
   justify-content: flex-start;
@@ -67,6 +58,7 @@
   .component-view__title {
     font-size: 20px;
     line-height: 26px;
+    margin-left: 47px;
   }
 }
 

@@ -24,7 +24,7 @@
 
 .histogramm__link {
   font-size: 16px;
-  color: var(--secondary);
+  color: var(--primary);
 }
 
 .histogramm__statistic {
@@ -41,7 +41,7 @@
 }
 
 .histogramm__chart-el {
-  background-color: var(--secondary);
+  background-color: var(--primary);
   margin-left: 1px;
   flex-grow: 1;
   animation: rising 1.5s ease-in-out reverse 1;

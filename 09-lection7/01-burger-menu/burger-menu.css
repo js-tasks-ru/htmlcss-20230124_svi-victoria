@@ -30,11 +30,11 @@
   border: none;
   background-color: var(--main-background);
   position: absolute;
-  left: 0px;
+  left: 16px;
 }
 
 .mobile-menu__header {
-  padding-bottom: 41px;
+  padding-bottom: 18px;
   display: flex;
   justify-content: center;
   align-items: center;

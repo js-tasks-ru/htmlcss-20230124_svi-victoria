@@ -45,5 +45,11 @@
   .menu_mobile {
     display: grid;
     gap: 16px;
+    position: absolute;
+    left: 16px;
   }
+}
+
+.menu_mobile .menu__title {
+  color: var(--font-muted);
 }

@@ -3,24 +3,26 @@
   padding: 71px 0 136px;
   color: var(--font-active);
 }
-
+@media (max-width: 767px) {
+  .footer {
+    display: none;
+  }
+}
 .footer__title {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 38px;
   line-height: 48px;
 }
-
 .footer__text {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   text-align: center;
 }
-
 .footer__content {
   max-width: 640px;
   margin: 0 auto;
@@ -28,14 +30,12 @@
   flex-wrap: wrap;
   justify-content: center;
 }
-
 .footer_transparent {
   padding: 92px 0 56px;
   color: var(--font-active);
 }
-
 .footer__text-small {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -46,8 +46,4 @@
   text-align: center;
 }
 
-@media (max-width: 767px) {
-  .footer {
-    display: none;
-  }
-}
+/*# sourceMappingURL=footer.css.map */

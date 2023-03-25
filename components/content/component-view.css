@@ -2,15 +2,17 @@
   background: var(--main-background);
   box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
   border-radius: 12px;
-
   padding-left: 48px;
-
   display: flex;
   flex-direction: column;
 }
-
+@media (max-width: 767px) {
+  .component-view {
+    padding-left: 0;
+  }
+}
 .component-view__title {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 28px;
@@ -19,41 +21,6 @@
   padding-bottom: 24px;
   padding-top: 32px;
 }
-
-.component-view__component-card {
-  margin: 32px 47px;
-  position: relative;
-  display: flex;
-  justify-content: flex-start;
-}
-
-.component-view__expander {
-  width: 100%;
-}
-
-.component-view__plasing-six-sections {
-  gap: 16px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-}
-
-.component-view__plasing_row-sections {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.component-view__plasing_column-sections {
-  display: flex;
-  flex-direction: row;
-  gap: 5px;
-}
-
-.component-view__component-code {
-  color: var(--font-active);
-}
-
 @media (max-width: 767px) {
   .component-view__title {
     font-size: 20px;
@@ -61,22 +28,44 @@
     margin-left: 47px;
   }
 }
-
-@media (max-width: 767px) {
-  .component-view {
-    padding-left: 0;
-  }
+.component-view__component-card {
+  margin: 32px 47px;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
 }
-
+.component-view__expander {
+  width: 100%;
+}
+.component-view__plasing-six-sections {
+  gap: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
 @media (max-width: 767px) {
   .component-view__plasing-six-sections {
     grid-template-columns: 1fr;
   }
 }
-
+.component-view__plasing_row-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.component-view__plasing_column-sections {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
 @media (max-width: 767px) {
   .component-view__plasing_column-sections {
     flex-direction: column;
     gap: 20px;
   }
 }
+.component-view__component-code {
+  color: var(--font-active);
+}
+
+/*# sourceMappingURL=component-view.css.map */

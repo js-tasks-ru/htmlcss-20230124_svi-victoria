@@ -1,14 +1,14 @@
 .basic {
   background-color: var(--preview-background);
 }
-
 .basic__container {
   display: grid;
   grid-template-columns: 1fr 3fr;
 }
-
 @media (max-width: 767px) {
   .basic__container {
     display: block;
   }
 }
+
+/*# sourceMappingURL=basic.css.map */

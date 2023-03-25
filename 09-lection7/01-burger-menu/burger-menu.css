@@ -9,11 +9,9 @@
   transition: transform 250ms linear;
   z-index: 1;
 }
-
 .mobile-menu[data-open] {
   transform: none;
 }
-
 .mobile-menu__icon {
   width: 24px;
   height: 24px;
@@ -22,7 +20,6 @@
   left: 0;
   fill: var(--font-active);
 }
-
 .mobile-menu__button {
   width: 26px;
   height: 26px;
@@ -32,10 +29,11 @@
   position: absolute;
   left: 16px;
 }
-
 .mobile-menu__header {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
 }
+
+/*# sourceMappingURL=burger-menu.css.map */

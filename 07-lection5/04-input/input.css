@@ -4,15 +4,13 @@
   gap: 5px;
   color: var(--font-card-type);
 }
-
 .form-group__control {
   min-height: 56px;
   display: flex;
   position: relative;
 }
-
 .form-group__label {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -21,20 +19,18 @@
   text-transform: uppercase;
   color: var(--font-muted);
 }
-
 .form-group__input {
   flex-grow: 1;
   box-sizing: border-box;
   background: var(--main-background);
   border: 1px solid var(--font-card-type);
   border-radius: 8px;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 26px;
 }
-
 .form-group__icon {
   width: 24px;
   height: 24px;
@@ -43,32 +39,29 @@
   right: 5px;
   display: none;
 }
-
 .form-group_invalid .form-group__input {
   border: 1px solid var(--error);
 }
-
 .form-group_invalid .form-group__icon_error {
   fill: var(--error);
   display: block;
 }
-
 .form-group_success .form-group__icon_success {
   fill: var(--primary);
   display: block;
 }
-
 .form-group__input:focus {
   outline: none;
   border: 3px solid var(--primary);
   transition: border 0.5s linear;
 }
-
 .form-group__input::placeholder {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 26px;
   color: var(--header-background);
 }
+
+/*# sourceMappingURL=input.css.map */

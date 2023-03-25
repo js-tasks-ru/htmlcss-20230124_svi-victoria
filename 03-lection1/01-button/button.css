@@ -1,5 +1,5 @@
 .button {
-  font-family: Roboto;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -10,37 +10,31 @@
   padding: 15px 60px 14px;
   transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 }
-
 .button_preview {
   padding: 10px;
   font-size: 13px;
 }
-
 .button_primary {
   background-color: var(--primary);
-
   color: var(--main-background);
 }
-
 .button_secondary {
   background-color: var(--secondary);
   color: var(--main-background);
 }
-
 .button_alternate {
   color: var(--font-card-type);
   border: 1px solid var(--border-color);
 }
-
 .button:hover {
   cursor: pointer;
 }
-
 .button:disabled {
   pointer-events: none;
   opacity: 0.5;
 }
-
 .button:active {
   transform: translateY(3px);
 }
+
+/*# sourceMappingURL=button.css.map */

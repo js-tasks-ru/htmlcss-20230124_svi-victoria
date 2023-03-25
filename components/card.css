@@ -8,7 +8,6 @@
   text-decoration: none;
   cursor: pointer;
 }
-
 .card__layout {
   flex-grow: 1;
   display: grid;
@@ -17,33 +16,28 @@
   align-items: center;
   padding: 32px 32px 0px 32px;
 }
-
 .card__inner {
   width: 100%;
 }
-
 .card__placing_three-column-sections {
   display: flex;
   flex-direction: row;
   gap: 5px;
 }
-
 .card__placing_three-row-sections {
   display: flex;
   flex-direction: column;
   gap: 16px;
   align-items: center;
 }
-
 .card__placing_six-sections {
   gap: 16px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
 }
-
 .card__text {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 21px;
@@ -51,7 +45,6 @@
   color: var(--font-active);
   align-self: baseline;
 }
-
 .card__type {
   font-weight: 400;
   font-size: 16px;
@@ -60,3 +53,5 @@
   padding-top: 0px;
   align-self: baseline;
 }
+
+/*# sourceMappingURL=card.css.map */

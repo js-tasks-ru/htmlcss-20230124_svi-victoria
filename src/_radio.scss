@@ -1,0 +1,70 @@
+@import 'mixines.scss';
+.radio {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+
+  &_preview &__title {
+    font-size: 14px;
+  }
+
+  &__input {
+    position: absolute;
+    outline: none;
+    clip: rect(0, 0, 0, 0);
+  }
+
+  &__state {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+  }
+
+  &__control {
+    box-sizing: border-box;
+    background: var(--main-background);
+    border: 1px solid var(--disableed);
+    border-radius: 14px;
+    width: 28px;
+    height: 28px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__icon {
+    display: none;
+  }
+
+  &__title {
+    @include font('Inter', normal, 400, 16px);
+    line-height: 24px;
+    color: var(--font-card-type);
+  }
+
+  &__input:checked ~ &__state &__icon {
+    display: block;
+  }
+
+  &__input:checked ~ &__state &__control {
+    border: 2px solid var(--primary);
+  }
+
+  &__input:disabled ~ &__state &__control {
+    background: var(--disableed);
+    border: 1px solid var(--disableed);
+  }
+
+  &__input:disabled ~ &__state &__title {
+    color: var(--disableed);
+  }
+
+  &__input:disabled ~ &__state {
+    pointer-events: none;
+  }
+
+  &__input:focus ~ &__state &__title {
+    text-decoration: underline;
+  }
+}

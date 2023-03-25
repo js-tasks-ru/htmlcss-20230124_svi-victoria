@@ -1,0 +1,83 @@
+@import 'mixines.scss';
+
+.toggler {
+  display: inline-block;
+  position: relative;
+
+  &_preview &__title {
+    font-size: 14px;
+  }
+
+  &__input {
+    position: absolute;
+    outline: none;
+    clip: rect(0, 0, 0, 0);
+  }
+
+  &__state {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+  }
+
+  &__control {
+    background: var(--main-background);
+    border: 1px solid var(--disableed);
+    border-radius: 16px;
+    height: 28px;
+    width: 52px;
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: left;
+  }
+
+  &__icon {
+    fill: var(--font-muted);
+    transition: transform 1s ease;
+  }
+
+  &__title {
+    @include font('Inter', normal, 400, 16px);
+    line-height: 24px;
+    color: var(--font-card-type);
+  }
+
+  &__input:checked ~ &__state &__control {
+    background: var(--primary);
+    border-color: var(--primary);
+  }
+
+  &__input:checked ~ &__state &__icon {
+    fill: var(--main-background);
+    transition: transform 1s ease;
+    transform: translateX(26px);
+  }
+
+  &__input:visited ~ &__state &__icon {
+    fill: var(--font-muted);
+    transition: transform 1s ease;
+    transform: translateX(-26px);
+  }
+
+  &__input:disabled ~ &__state {
+    pointer-events: none;
+  }
+
+  &__input:disabled ~ &__state &__control {
+    background: var(--disableed);
+  }
+
+  &__input:disabled ~ &__state &__icon {
+    fill: var(--font-muted);
+  }
+
+  &__input:disabled ~ &__state &__title {
+    color: var(--disableed);
+  }
+
+  &__input:focus ~ &__state &__title {
+    text-decoration: underline;
+  }
+}

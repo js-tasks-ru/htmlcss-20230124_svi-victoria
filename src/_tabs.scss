@@ -1,0 +1,133 @@
+@import 'variables.scss';
+@import 'mixines.scss';
+
+.tabs {
+  max-width: 100%;
+  background-color: var(--preview-background);
+  border-bottom: 1px solid var(--border-color);
+  padding: 0px 0px 204px;
+  flex-grow: 1;
+
+  &__wrapper {
+    background: var(--header-background);
+    border-bottom: 1px solid var(--disableed);
+    @media ($media-mob) {
+      background: var(--main-background);
+      overflow-x: scroll;
+    }
+  }
+
+  &__menu {
+    padding-top: 40px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 40px;
+  }
+
+  &__state {
+    position: relative;
+  }
+
+  &__input {
+    position: absolute;
+    outline: none;
+    clip: rect(0, 0, 0, 0);
+  }
+
+  &__label {
+    cursor: pointer;
+    @include font('Inter', normal, 400, 16px);
+    line-height: 24px;
+    color: var(--font-muted);
+    padding-bottom: 8px;
+    white-space: nowrap;
+  }
+
+  &__slider {
+    position: absolute;
+    background-color: var(--font-active);
+    width: 100%;
+    height: 5px;
+    transform: scaleX(0);
+  }
+
+  &__section {
+    padding-top: 68px;
+    padding-bottom: 20px;
+    gap: 30px;
+    flex-wrap: wrap;
+    display: none;
+    @media ($media-mob) {
+      flex-direction: column;
+      margin-left: 16px;
+      overflow: scroll;
+    }
+  }
+
+  &_preview {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  &__code {
+    white-space: pre-wrap;
+    text-overflow: clip;
+  }
+
+  &__input:hover ~ &__slider {
+    transform: scaleX(1);
+    transition: transform 250ms ease-in-out;
+  }
+
+  &__input:hover ~ &__label {
+    color: var(--font-active);
+  }
+
+  &__input:checked ~ &__slider {
+    transform: scaleX(1);
+    transition: transform 250ms ease-in-out;
+  }
+
+  &__input:checked ~ &__label {
+    color: var(--font-active);
+  }
+
+  &__layout {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    position: relative;
+    border-bottom: 1px solid var(--disableed);
+    padding-bottom: 5px;
+    @media ($media-mob) {
+      margin-left: 16px;
+    }
+  }
+
+  &_preview:has(&__input_html:checked) &__section_html {
+    display: block;
+  }
+  &_preview:has(&__input_css:checked) &__section_css {
+    display: block;
+  }
+  &:has(&__input_all:checked) &__section_all {
+    display: flex;
+  }
+
+  &:has(&__input_atoms:checked) &__section_atoms {
+    display: flex;
+  }
+
+  &:has(&__input_molecules:checked) &__section_molecules {
+    display: flex;
+  }
+
+  &:has(&__input_organisms:checked) &__section_organisms {
+    display: flex;
+  }
+}

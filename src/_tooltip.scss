@@ -1,0 +1,50 @@
+@import 'mixines.scss';
+
+.tooltip {
+  display: inline-block;
+  position: relative;
+
+  &__trigger {
+    cursor: pointer;
+  }
+
+  &__bubble {
+    @include font('Inter', normal, 400, 16px);
+    line-height: 24px;
+    text-align: center;
+    color: #dde2e5;
+    border-radius: 10px;
+    padding: 13px 21px 8px;
+    background: var(--primary);
+    display: none;
+    white-space: nowrap;
+    position: absolute;
+    left: 50%;
+    bottom: calc(100% + 8px);
+    transform: translateX(-50%);
+  }
+
+  &__bubble:before {
+    content: '';
+    border: 10px solid transparent;
+    border-top-color: var(--primary);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__trigger:hover ~ .tooltip__bubble {
+    display: block;
+  }
+
+  &__icon-help {
+    width: 22px;
+    height: 22px;
+    fill: var(--primary);
+  }
+
+  &_preview {
+    display: block;
+  }
+}

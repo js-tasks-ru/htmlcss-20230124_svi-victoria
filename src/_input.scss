@@ -1,0 +1,67 @@
+@import 'mixines.scss';
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: var(--font-card-type);
+
+  &__control {
+    min-height: 56px;
+    display: flex;
+    position: relative;
+  }
+
+  &__label {
+    @include font('Inter', normal, 500, 12px);
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--font-muted);
+  }
+
+  &__input {
+    flex-grow: 1;
+    box-sizing: border-box;
+    background: var(--main-background);
+    border: 1px solid var(--font-card-type);
+    border-radius: 8px;
+    @include font('Inter', normal, 400, 20px);
+    line-height: 26px;
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 18px;
+    right: 5px;
+    display: none;
+  }
+
+  &_invalid &__input {
+    border: 1px solid var(--error);
+  }
+
+  &_invalid &__icon_error {
+    fill: var(--error);
+    display: block;
+  }
+
+  &_success &__icon_success {
+    fill: var(--primary);
+    display: block;
+  }
+
+  &__input:focus {
+    outline: none;
+    border: 3px solid var(--primary);
+    transition: border 0.5s linear;
+  }
+
+  &__input::placeholder {
+    @include font('Inter', normal, 400, 20px);
+    line-height: 26px;
+    color: var(--header-background);
+  }
+}

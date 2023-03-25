@@ -1,0 +1,70 @@
+@import 'variables.scss';
+@import 'mixines.scss';
+
+.header {
+  background: var(--header-background);
+  padding-top: 25px;
+  @media ($media-mob) {
+    background: var(--card-background);
+  }
+
+  &__title {
+    @include font('Inter', normal, 500, 50px);
+    line-height: 64px;
+    color: var(--font-active);
+    @media ($media-mob) {
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 38px;
+      color: var(--font-card-type);
+    }
+  }
+
+  &_transparent {
+    padding: 24px 0;
+    background: var(--preview-background);
+  }
+
+  &__inner {
+    margin-bottom: 41px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    @media ($media-mob) {
+      justify-content: center;
+    }
+  }
+
+  &__logo {
+    fill: var(--font-active);
+  }
+
+  &__button {
+    width: 26px;
+    height: 26px;
+    padding: 2px !important;
+    border: none;
+    background-color: var(--main-background);
+    position: absolute;
+    left: 0;
+
+    @media ($media-pk) {
+      display: none;
+    }
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    fill: var(--font-active);
+  }
+}
+
+.mobile-menu .header_transparent {
+  border-bottom: 1px solid var(--disableed);
+}

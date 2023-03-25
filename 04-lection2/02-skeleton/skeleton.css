@@ -3,65 +3,51 @@
   border-radius: 8px;
   padding: 24px 40px 32px 24px;
 }
-
+@media (max-width: 767px) {
+  .skeleton {
+    padding: 12px 20px 16px 12px;
+  }
+}
 .skeleton__header {
   display: flex;
   align-items: center;
   margin-bottom: 24px;
 }
-
 .skeleton__title {
   flex-shrink: 1;
   flex-basis: 100%;
   margin-left: 16px;
 }
-
 .skeleton__line {
   height: 20px;
   max-width: 100%;
   width: 100%;
   margin-bottom: 8px;
-  background: linear-gradient(
-    90deg,
-    var(--font-muted),
-    var(--main-background),
-    var(--border-color)
-  );
+  background: linear-gradient(90deg, var(--font-muted), var(--main-background), var(--border-color));
   background-size: 200% 200%;
   animation: gradient 2s ease forwards infinite;
 }
-
 .skeleton__line:last-child {
   margin-bottom: 0px;
 }
-
 .skeleton__line_small {
   max-width: 40%;
 }
-
 .skeleton__line_middle {
   max-width: 50%;
 }
-
 .skeleton__circle {
   flex-shrink: 0;
   width: 64px;
   height: 64px;
   border-radius: 50%;
-  background: linear-gradient(
-    90deg,
-    var(--font-muted),
-    var(--main-background),
-    var(--border-color)
-  );
+  background: linear-gradient(90deg, var(--font-muted), var(--main-background), var(--border-color));
   background-size: 200% 200%;
   animation: gradient 2s ease forwards infinite;
 }
-
 .skeleton_preview .skeleton__circle {
   animation: none;
 }
-
 .skeleton_preview .skeleton__line {
   animation: none;
 }
@@ -72,7 +58,6 @@
     background-position-x: 100%;
     background-position-y: center;
   }
-
   100% {
     background-position: -100%;
     background-position-x: -100%;
@@ -80,8 +65,4 @@
   }
 }
 
-@media (max-width: 767px) {
-  .skeleton {
-    padding: 12px 20px 16px 12px;
-  }
-}
+/*# sourceMappingURL=skeleton.css.map */

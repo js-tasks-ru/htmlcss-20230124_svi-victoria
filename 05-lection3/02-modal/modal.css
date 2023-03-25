@@ -9,7 +9,6 @@
   left: 0;
   z-index: 1;
 }
-
 .modal__inner {
   background: var(--main-background);
   border-radius: 8px;
@@ -23,27 +22,26 @@
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
 }
-
 .modal__title {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
-  line-height: 24px;
   font-weight: 600;
   font-size: 20px;
+  line-height: 24px;
   color: var(--font-active);
   padding-bottom: 14px;
 }
-
 .modal__text {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-style: normal;
-  line-height: 24px;
   font-weight: 400;
   font-size: 16px;
+  line-height: 24px;
   color: var(--font-active);
 }
-
 .modal__icon-cross {
   width: 20px;
   height: 20px;
 }
+
+/*# sourceMappingURL=modal.css.map */

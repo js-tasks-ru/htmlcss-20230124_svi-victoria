@@ -1,0 +1,62 @@
+@import 'variables.scss';
+@import 'mixines.scss';
+
+.card {
+  width: 350px;
+  height: 367px;
+  background: var(--card-background);
+  box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
+  border-radius: 12px;
+  display: flex;
+  text-decoration: none;
+  cursor: pointer;
+
+  &__layout {
+    flex-grow: 1;
+    display: grid;
+    grid-template-rows: 1fr 31px 51px;
+    justify-items: center;
+    align-items: center;
+    padding: 32px 32px 0px 32px;
+  }
+
+  &__inner {
+    width: 100%;
+  }
+
+  &__placing_three-column-sections {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+
+  &__placing_three-row-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+
+  &__placing_six-sections {
+    gap: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  &__text {
+    @include font('Roboto', normal, 500, 21px);
+    line-height: 25px;
+    color: var(--font-active);
+    align-self: baseline;
+  }
+
+  &__type {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 32px;
+    padding-top: 0px;
+    align-self: baseline;
+  }
+}

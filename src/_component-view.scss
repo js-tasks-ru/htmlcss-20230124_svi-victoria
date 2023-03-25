@@ -1,0 +1,70 @@
+@import 'variables.scss';
+
+.component-view {
+  background: var(--main-background);
+  box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
+  border-radius: 12px;
+  padding-left: 48px;
+  display: flex;
+  flex-direction: column;
+  @media ($media-mob) {
+    padding-left: 0;
+  }
+
+  &__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 38px;
+    color: var(--font-card-type);
+    padding-bottom: 24px;
+    padding-top: 32px;
+    @media ($media-mob) {
+      font-size: 20px;
+      line-height: 26px;
+      margin-left: 47px;
+    }
+  }
+
+  &__component-card {
+    margin: 32px 47px;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__expander {
+    width: 100%;
+  }
+
+  &__plasing-six-sections {
+    gap: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    @media ($media-mob) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__plasing_row-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__plasing_column-sections {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    @media ($media-mob) {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+  &__component-code {
+    color: var(--font-active);
+  }
+}

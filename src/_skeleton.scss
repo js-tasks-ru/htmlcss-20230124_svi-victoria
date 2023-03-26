@@ -5,7 +5,7 @@
   border-radius: 8px;
   padding: 24px 40px 32px 24px;
 
-  @media ($media-mob) {
+  @media (--media-mob) {
     padding: 12px 20px 16px 12px;
   }
 

@@ -11,7 +11,7 @@
   &__wrapper {
     background: var(--header-background);
     border-bottom: 1px solid var(--disableed);
-    @media ($media-mob) {
+    @media (--media-mob) {
       background: var(--main-background);
       overflow-x: scroll;
     }
@@ -60,7 +60,7 @@
     gap: 30px;
     flex-wrap: wrap;
     display: none;
-    @media ($media-mob) {
+    @media (--media-mob) {
       flex-direction: column;
       margin-left: 16px;
       overflow: scroll;
@@ -104,7 +104,7 @@
     position: relative;
     border-bottom: 1px solid var(--disableed);
     padding-bottom: 5px;
-    @media ($media-mob) {
+    @media (--media-mob) {
       margin-left: 16px;
     }
   }

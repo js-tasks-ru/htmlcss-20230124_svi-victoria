@@ -8,7 +8,7 @@
   align-items: center;
   width: 100%;
   background: var(--preview-background);
-  @media ($media-mob) {
+  @media (--media-mob) {
     display: none;
   }
 
@@ -32,7 +32,7 @@
   }
 
   &_mobile {
-    @media ($media-mob) {
+    @media (--media-mob) {
       display: grid;
       gap: 16px;
       position: absolute;

@@ -5,7 +5,7 @@
   background: var(--footer-background);
   padding: 71px 0 136px;
   color: var(--font-active);
-  @media ($media-mob) {
+  @media (--media-mob) {
     display: none;
   }
 

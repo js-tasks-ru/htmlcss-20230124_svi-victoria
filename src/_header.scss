@@ -4,7 +4,7 @@
 .header {
   background: var(--header-background);
   padding-top: 25px;
-  @media ($media-mob) {
+  @media (--media-mob) {
     background: var(--card-background);
   }
 
@@ -12,7 +12,7 @@
     @include font('Inter', normal, 500, 50px);
     line-height: 64px;
     color: var(--font-active);
-    @media ($media-mob) {
+    @media (--media-mob) {
       font-weight: 400;
       font-size: 28px;
       line-height: 38px;
@@ -32,7 +32,7 @@
     align-items: center;
     position: relative;
 
-    @media ($media-mob) {
+    @media (--media-mob) {
       justify-content: center;
     }
   }
@@ -50,7 +50,7 @@
     position: absolute;
     left: 0;
 
-    @media ($media-pk) {
+    @media (--media-pk) {
       display: none;
     }
   }

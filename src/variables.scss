@@ -1,2 +1,3 @@
-$media-mob: 'max-width: 767px';
-$media-pk: 'min-width: 767px';
+@custom-media --media-mob (max-width: 767px);
+@custom-media --media-pk (min-width: 767px);
+@custom-media --media-pl (max-width: 1110px);

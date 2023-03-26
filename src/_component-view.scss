@@ -7,7 +7,7 @@
   padding-left: 48px;
   display: flex;
   flex-direction: column;
-  @media ($media-mob) {
+  @media (--media-mob) {
     padding-left: 0;
   }
 
@@ -20,7 +20,7 @@
     color: var(--font-card-type);
     padding-bottom: 24px;
     padding-top: 32px;
-    @media ($media-mob) {
+    @media (--media-mob) {
       font-size: 20px;
       line-height: 26px;
       margin-left: 47px;
@@ -43,7 +43,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    @media ($media-mob) {
+    @media (--media-mob) {
       grid-template-columns: 1fr;
     }
   }
@@ -58,7 +58,7 @@
     display: flex;
     flex-direction: row;
     gap: 5px;
-    @media ($media-mob) {
+    @media (--media-mob) {
       flex-direction: column;
       gap: 20px;
     }

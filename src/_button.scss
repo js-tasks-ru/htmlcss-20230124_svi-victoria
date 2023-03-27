@@ -1,0 +1,45 @@
+@import 'mixines.scss';
+
+.button {
+  @include font('Roboto', normal, 500, 16px);
+  line-height: 19px;
+  text-align: center;
+  border-radius: 8px;
+  border: none;
+  padding: 15px 60px 14px;
+  transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+
+  &_preview {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  &_primary {
+    background-color: var(--primary);
+
+    color: var(--main-background);
+  }
+
+  &_secondary {
+    background-color: var(--secondary);
+    color: var(--main-background);
+  }
+
+  &_alternate {
+    color: var(--font-card-type);
+    border: 1px solid var(--border-color);
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:disabled {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+
+  &:active {
+    transform: translateY(3px);
+  }
+}

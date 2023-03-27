@@ -1,0 +1,87 @@
+@import 'variables.scss';
+
+.skeleton {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 24px 40px 32px 24px;
+
+  @media (--media-mob) {
+    padding: 12px 20px 16px 12px;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+
+  &__title {
+    flex-shrink: 1;
+    flex-basis: 100%;
+    margin-left: 16px;
+  }
+
+  &__line {
+    height: 20px;
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 8px;
+    background: linear-gradient(
+      90deg,
+      var(--font-muted),
+      var(--main-background),
+      var(--border-color)
+    );
+    background-size: 200% 200%;
+    animation: gradient 2s ease forwards infinite;
+  }
+
+  &__line:last-child {
+    margin-bottom: 0px;
+  }
+
+  &__line_small {
+    max-width: 40%;
+  }
+
+  &__line_middle {
+    max-width: 50%;
+  }
+
+  &__circle {
+    flex-shrink: 0;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: linear-gradient(
+      90deg,
+      var(--font-muted),
+      var(--main-background),
+      var(--border-color)
+    );
+    background-size: 200% 200%;
+    animation: gradient 2s ease forwards infinite;
+  }
+
+  &_preview &__circle {
+    animation: none;
+  }
+
+  &_preview &__line {
+    animation: none;
+  }
+}
+
+@keyframes gradient {
+  from {
+    background-position: 100%;
+    background-position-x: 100%;
+    background-position-y: center;
+  }
+
+  100% {
+    background-position: -100%;
+    background-position-x: -100%;
+    background-position-y: center;
+  }
+}

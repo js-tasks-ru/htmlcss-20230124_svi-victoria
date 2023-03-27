@@ -1,0 +1,84 @@
+@import 'mixines.scss';
+
+.calendar {
+  padding: 28px 30px 40px;
+  background: var(--card-background);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+
+  &_view {
+    padding: 8px 12px;
+    min-width: 200px;
+    font-size: 9px;
+  }
+
+  &_preview {
+    padding: 5px 12px;
+    min-width: 180px;
+    font-size: 9px;
+  }
+
+  &__title {
+    @include font('Inter', normal, 600, 20px);
+    line-height: 24px;
+    color: var(--font-active);
+    margin-bottom: 24px;
+    text-align: center;
+  }
+
+  &__wrapper {
+    position: relative;
+    padding-bottom: 100%;
+  }
+
+  &__inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(7, 1fr);
+    grid-auto-flow: row;
+    align-items: center;
+  }
+
+  &__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    line-height: 20px;
+    @include font('Source Sans Pro', normal, 400, 16px);
+  }
+
+  &__item_weekday {
+    font-family: 'Inter';
+    font-size: 14px;
+    color: var(--font-muted);
+  }
+
+  &__item_day {
+    color: var(--font-active);
+  }
+
+  &__item_active {
+    color: var(--main-background);
+    background: var(--primary);
+  }
+
+  &__item_between-active {
+    color: var(--main-background);
+    background: #a0b1f5;
+  }
+
+  &_preview &__item {
+    font-size: 9px;
+  }
+
+  &_preview &__title {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+}

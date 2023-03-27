@@ -1,0 +1,44 @@
+@import 'variables.scss';
+@import 'mixines.scss';
+
+.footer {
+  background: var(--footer-background);
+  padding: 71px 0 136px;
+  color: var(--font-active);
+  @media (--media-mob) {
+    display: none;
+  }
+
+  &__title {
+    @include font('Inter', normal, 500, 38px);
+    line-height: 48px;
+  }
+
+  &__text {
+    @include font('Inter', normal, 400, 16px);
+    line-height: 24px;
+    text-align: center;
+  }
+
+  &__content {
+    max-width: 640px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &_transparent {
+    padding: 92px 0 56px;
+    color: var(--font-active);
+  }
+
+  &__text-small {
+    @include font('Inter', normal, 500, 12px);
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--font-muted);
+    text-align: center;
+  }
+}

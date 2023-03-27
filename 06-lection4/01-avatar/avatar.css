@@ -1,16 +1,2 @@
-.avatar {
-  width: 102px;
-  height: 102px;
-}
-
-.avatar__img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 50%;
-}
-
-.avatar_preview {
-  min-width: 160px;
-  min-height: 160px;
-}
+.avatar{height:102px;width:102px}.avatar__img{border-radius:50%;height:100%;-o-object-fit:cover;object-fit:cover;width:100%}.avatar_preview{min-height:160px;min-width:160px}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9fYXZhdGFyLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsUUFFRSxZQUFhLENBRGIsV0FjRixDQVhFLGFBSUUsaUJBQWtCLENBRmxCLFdBQVksQ0FDWixtQkFBaUIsQ0FBakIsZ0JBQWlCLENBRmpCLFVBSUYsQ0FFQSxnQkFFRSxnQkFBaUIsQ0FEakIsZUFFRiIsImZpbGUiOiJhdmF0YXIuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmF2YXRhciB7XHJcbiAgd2lkdGg6IDEwMnB4O1xyXG4gIGhlaWdodDogMTAycHg7XHJcblxyXG4gICZfX2ltZyB7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIGhlaWdodDogMTAwJTtcclxuICAgIG9iamVjdC1maXQ6IGNvdmVyO1xyXG4gICAgYm9yZGVyLXJhZGl1czogNTAlO1xyXG4gIH1cclxuXHJcbiAgJl9wcmV2aWV3IHtcclxuICAgIG1pbi13aWR0aDogMTYwcHg7XHJcbiAgICBtaW4taGVpZ2h0OiAxNjBweDtcclxuICB9XHJcbn1cclxuIl19 */

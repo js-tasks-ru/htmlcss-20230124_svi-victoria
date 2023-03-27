@@ -1,0 +1,13 @@
+@import 'variables.scss';
+
+.basic {
+  background-color: var(--preview-background);
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    @media (--media-mob) {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@import 'variables.scss';
+
+.theme-changer {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  @media (--media-mob) {
+    display: none;
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+    fill: var(--font-muted);
+  }
+}

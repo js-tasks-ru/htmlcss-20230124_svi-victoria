@@ -1,10 +1,2 @@
-.container {
-  max-width: 1110px;
-  margin: 0 auto;
-}
-
-@media (max-width: 1110px) {
-  .container {
-    margin: 0 15px;
-  }
-}
+.container{margin:0 auto;max-width:1110px}@media (max-width:1110px){.container{margin:0 15px}}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9fY29udGFpbmVyLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBRUEsV0FFRSxhQUFjLENBRGQsZ0JBTUYsQ0FIRSwwQkFKRixXQUtJLGFBRUosQ0FERSIsImZpbGUiOiJjb250YWluZXIuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiQGltcG9ydCAndmFyaWFibGVzLnNjc3MnO1xyXG5cclxuLmNvbnRhaW5lciB7XHJcbiAgbWF4LXdpZHRoOiAxMTEwcHg7XHJcbiAgbWFyZ2luOiAwIGF1dG87XHJcblxyXG4gIEBtZWRpYSAoLS1tZWRpYS1wbCkge1xyXG4gICAgbWFyZ2luOiAwIDE1cHg7XHJcbiAgfVxyXG59XHJcbiJdfQ== */

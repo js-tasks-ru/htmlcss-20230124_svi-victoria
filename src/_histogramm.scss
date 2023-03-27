@@ -1,0 +1,94 @@
+@import 'mixines.scss';
+
+.histogramm {
+  @include font('Inter', normal, 400);
+  padding: 16px 24px 24px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &__header {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-size: 16px;
+    color: var(--font-active);
+  }
+
+  &__link {
+    font-size: 16px;
+    color: var(--primary);
+  }
+
+  &__statistic {
+    font-size: 20px;
+    color: var(--font-active);
+  }
+
+  &__chart {
+    height: 50px;
+    align-self: flex-end;
+    flex-basis: 100%;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__chart-el {
+    background-color: var(--primary);
+    margin-left: 1px;
+    flex-grow: 1;
+    animation: rising 1.5s ease-in-out reverse 1;
+
+    &_1 {
+      height: 10%;
+    }
+
+    &_2 {
+      height: 20%;
+    }
+
+    &_3 {
+      height: 30%;
+    }
+
+    &_4 {
+      height: 40%;
+    }
+
+    &_5 {
+      height: 50%;
+    }
+
+    &_6 {
+      height: 60%;
+    }
+
+    &_7 {
+      height: 70%;
+    }
+
+    &_8 {
+      height: 80%;
+    }
+
+    &_9 {
+      height: 90%;
+    }
+
+    &_10 {
+      height: 100%;
+    }
+  }
+}
+
+@keyframes rising {
+  to {
+    height: 0;
+  }
+}
